@@ -1,0 +1,228 @@
+
+body {
+    font-size: 25px;
+    background: #E8E8E8;
+    margin-top: 5%;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+@media screen and (max-width: 1280px) {
+    body { font-size: 23px; }
+}
+@media screen and (max-width: 900px) {
+    body { font-size: 21px; }
+}
+@media screen and (max-width: 700px){
+    body { font-size: 19px; }
+}
+@media screen and (max-width: 400px){
+    body { font-size: 17px; }
+}
+
+
+a {
+    text-decoration: none;
+    /*color: #071F5D;*/
+}
+
+
+ul,
+ul ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#usuario {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1%;
+    text-align: right;
+    font-size: 100%;
+    /*border: 1px solid red;*/
+}
+
+#policy {
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+    /*text-decoration: underline;*/
+    /*text-align: right;*/
+    font-size: 80%;
+    cursor: pointer;
+    margin-top: 2%;
+    text-decoration-color:#071F5D; 
+}
+
+#wrapper {  
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1%;
+}
+.menu {
+    width: auto;
+    height: auto;
+}
+
+/*menu*/
+.menu > li > a {
+    background-color: #E8E8E8;
+    box-shadow: inset 0px 1px 0px 0px #071F5D;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    text-indent: 3rem;
+    display: inline-block;
+    position: relative;
+    color: #071F5D;
+    text-shadow: 0px 1px 0px rgba(0,0,0,.5);
+    /*border-radius: .769rem;*/
+}
+
+/*sub-menu desplegable*/
+.menu ul li a {
+    background: #fff;
+    border-bottom: 1px solid #efeff0;
+    width: 100%;
+    height: 3rem;
+    line-height: 3rem;
+    text-indent: 6rem;
+    display: inline-block;
+    position: relative;
+    font-size: 90%;
+    color: #878d95;
+    /*font-weight: 400;*/
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    /*font-size: 0.923rem;*/
+}
+
+/*sub-menu desplegable último item*/
+.menu ul li:last-child a {
+    border-bottom: 1px solid #071F5D;
+}
+.menu > li > a:hover, 
+.menu > li > a.active {
+    background-color: #071F5D;  
+    color: white;
+    background-repeat: no-repeat;
+}
+/*
+.menu > li > a.active {
+    border-bottom: 1px solid #1a638f;
+}*/
+
+/*iconos del menu*/
+.menu > li > a:before {
+    content: '';
+    background-repeat: no-repeat;
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    left: 0;
+    /*color: white;*/
+}
+
+/* imagenes de los iconos*/
+.item0 > a:before {background-image: url(../img/hdpi/ic_signout_a.png);}
+.item1 > a:before {background-image: url(../img/hdpi/ic_news_a.png);}
+.item2 > a:before {background-image: url(../img/hdpi/ic_web_a.png);}
+.item3 > a:before {background-image: url(../img/hdpi/ic_doc_a.png);}
+.item4 > a:before {background-image: url(../img/hdpi/ic_customer_a.png);}
+.item5 > a:before {background-image: url(../img/hdpi/ic_shareit_a.png);}
+.item6 > a:before {background-image: url(../img/hdpi/ic_languaje_a.png);}
+.item7 > a:before {background-image: url(../img/hdpi/ic_new_a.png);}
+.item8 > a:before {background-image: url(../img/hdpi/ic_feedback_a.png);}
+
+.item0:hover > a:before {background-image: url(../img/hdpi/ic_signout_w.png);}
+.item1:hover > a:before {background-image: url(../img/hdpi/ic_news_w.png);}
+.item2:hover > a:before {background-image: url(../img/hdpi/ic_web_w.png);}
+.item3:hover > a:before {background-image: url(../img/hdpi/ic_doc_w.png);}
+.item4:hover > a:before {background-image: url(../img/hdpi/ic_customer_w.png);}
+.item5:hover > a:before {background-image: url(../img/hdpi/ic_shareit_w.png);}
+.item6:hover > a:before {background-image: url(../img/hdpi/ic_languaje_w.png);}
+.item7:hover > a:before {background-image: url(../img/hdpi/ic_new_w.png);}
+.item8:hover > a:before {background-image: url(../img/hdpi/ic_feedback_w.png);}
+
+/*globo de span*/
+.menu > li > a span {
+    height: 2rem;
+    line-height: 2rem;
+    text-indent: 0;
+    display: inline-block;
+    position: absolute;
+    right: .5rem;
+    top: 19%; 
+    background: #C42625;
+    padding: 0rem .6rem .0rem .6rem;
+    color: white;
+    text-align: center;
+    border-radius: .769rem;
+    text-shadow: 0px 1px 0px rgba(0,0,0,.5);
+}
+
+.menu > li > a:hover span, 
+.menu > li a.active span {
+    background: #C42625;
+}
+
+.menu ul > li > a span {
+    font-size: 0.857em; 
+    display: inline-block;
+    position: absolute;
+    right: .5em;
+    top: 50%;
+    background: #C42625;
+    border: 1px solid #d0d0d3;
+    line-height: 1em;
+    height: 1em;
+    padding: .4em .7em;
+    margin: -.9em 0 0 0; 
+    color: #878d95;
+    text-indent: 0;
+    text-align: center;
+    border-radius: 769em;
+    text-shadow: 0px 0px 0px rgba(255,255,255,.01);
+
+}
+
+/*opciones de sub-menu desplegable*/
+.menu > li > ul li a:before {
+    /*font-size: 8px;*/
+    color: #bcbcbf;
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    /*top: 0;*/
+    left: -2rem;
+    content: '▶';
+}
+ 
+.menu > li > ul li:hover a,
+.menu > li > ul li:hover a span,
+.menu > li > ul li:hover a:before {
+    color: black;
+}
+
+/*burbuja del +*/
+.menu > li > a mas {
+    height: 2rem;
+    line-height: 2rem;
+    text-indent: 0rem;
+    display: inline-block;
+    position: absolute;
+    right: .5rem;
+    top: 20%; 
+    background: #071F5D;
+    padding: 0rem 1rem .0rem 1rem;
+    color: white;
+    text-align: center;
+    border-radius: .769rem;
+    text-shadow: 0px 1px 0px rgba(0,0,0,.5);
+    /*border: 2px solid yellow;*/
+}
+
+/*pasan sobre la linea con + */
+.menu > li:hover > a mas {
+    background: white;
+    color: #071F5D;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inicio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link href="css/inicio.css" rel="stylesheet" type="text/css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+	<script type="text/javascript" src="js/funciones.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady() {
+		    document.addEventListener("offline", onOffline, false);
+        }
+	</script>
+
+</head>
+<body>
+    <div class="modal">
+		<div class="login-card">
+			<div align="center">
+				<img src="img/WAI Logo.png" class="animated zoomIn" style="width: 30%; max-width: 150px; height: auto">
+			</div>
+			<h1>Bem-vindo</h1>
+			<h2 id="mensaje">Digite seu e-mail para continuar</h2>
+			<form id="formulario">
+				<input type="email" id="email" name="email" placeholder="Email">
+				<input type="submit" value="Continuar" id="login" >
+				<!-- <input type="button" value="Cancel" id="cancel" onclick="closeApp();"> -->
+			</form>
+			<div class="login-help">
+				<a href="javascript:selector('regi');">pt Registrar</a>
+				<!-- <a href="registro.en.html">Registrarse</a> • <a href="lostpass.en.html">Forgot Password</a> -->
+			</div>
+
+		</div>
+	</div>
+
+	<script>
+		$('#formulario').submit(function() { 
+			
+			var email = $("#email").val()
+
+			localStorage.email = email
+			
+			archivoValidacion = "http://www.wai-news.com/php/inicio.php?jsoncallback=?"
+			
+			$.getJSON( archivoValidacion, { correo:email })
+
+			.done(function(respuestaServer) {
+		
+				if(respuestaServer.validacion == "ok"){
+			
+					// alert(respuestaServer.id + "\n" + respuestaServer.name)
+					localStorage.usuario = respuestaServer.name;
+					self.location.href="index.pt.html";
+		 	
+				}else{
+		 	
+					showAlert(respuestaServer.mensaje,'Error');
+
+					var tit = document.getElementById('mensaje');
+  					tit.childNodes[0].nodeValue = respuestaServer.mensaje;
+  					tit.style.color = "red";
+
+				}
+		
+			})
+		return false;
+		})
+		
+	</script>
+
+</body>
+</html>

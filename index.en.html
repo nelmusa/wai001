@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="format-detection" content="telephone=no" />
+	<meta name="msapplication-tap-highlight" content="no" />
+	<title>Main Menu</title>
+
+	<link rel="stylesheet" type="text/css" media="all" href="css/index.css">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scale=no, maximum-scale=1" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/funciones.js"></script> 
+
+    <script type="text/javascript" charset="utf-8" src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script>
+
+	<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+
+    <script type="text/javascript" charset="utf-8">
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady() {
+		    document.addEventListener("offline", onOffline, false);
+			document.addEventListener('backbutton', closeApp, false);
+        }
+	</script>
+</head>
+<body onload="user_ini()">
+	<div align="center">
+		<img src="img/WAI Logo.png" style="width: 20%; max-width: 150px; height: auto">
+	</div>
+	<!-- <h1 id="usuario">Aqui va el nombre del usuario</h1> -->
+	<div id="wrapper">
+		<ul class="menu">
+			<li class="item0">
+				<a href="javascript:signout();">Sign Out</a>
+			</li>
+			<li class="item1">
+				<a id="new" href="javascript:selector('news');">WAI News</a>
+			</li>
+			<li class="item2">
+				<a id="Web" href="javascript:selector('web');">WAI Web Site</a>
+			</li>
+			<li class="item3">
+				<a id="doc" href="javascript:selector('docu');">Documents</a>
+			</li>
+			<li class="item4">
+				<a href="#">Customer Access<mas>+</mas></a>
+				<ul>
+					<li class="subitem1"><a href="javascript:selector('send');">Send Order</a></li>
+					<li class="subitem2"><a href="javascript:selector('cont');">Contact Us</a></li>
+				</ul>
+			</li>
+			<li class="item5"><a href="javascript:selector('shar');">Share It</a>
+			</li>
+			<li class="item6"><a href="#">Languaje<mas>+</mas></a>
+				<ul>
+					<li class="subitem1"><a href="javascript:cambiar_idioma('es');">Spanish</a></li>
+					<li class="subitem2"><a href="javascript:cambiar_idioma('pt');">Portuguese</a></li>
+				</ul>
+			</li>
+			<li class="item7"><a href="javascript:selector('newp');">New Products</a>
+			</li>
+			<li class="item8">
+				<a href="javascript:noti_mail();">Feedback</a>
+			</li>
+		</ul>
+	</div>
+
+	<div align="center" onclick="informacion()">
+		<img src="img/TRANSPO Logo.png" style="width: 30%; max-width: 300px; height: auto">
+	</div>
+
+	<h2 id="policy" onclick="javascript:selector('pri');">Private Policy</h2>
+	<!-- <div class="policy" href="#" onclick="window.open('http://www.wai-news.com/index.php?option=com_content&view=article&id=190&Itemid=435', '_blank', 'EnableViewPortScale=yes')">Private Policy</div> -->
+
+	<script type="text/javascript">
+		$(function() {
+
+			var menu_ul = $('.menu > li > ul'),
+			menu_a  = $('.menu > li > a');
+
+			menu_ul.hide();
+
+			menu_a.click(function(e) {
+				// e.preventDefault();
+				if(!$(this).hasClass('active')) {
+					menu_a.removeClass('active');
+					menu_ul.filter(':visible').slideUp('normal');
+					$(this).addClass('active').next().stop(true,true).slideDown('normal');
+				} else {
+					$(this).removeClass('active');
+					$(this).next().stop(true,true).slideUp('normal');
+				}
+			});
+		});
+	</script>
+
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript">
+		app.initialize();
+	</script>
+
+</body>
+</html>

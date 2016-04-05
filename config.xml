@@ -1,0 +1,93 @@
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="nms.wai.001" version="1.0.3">
+	<name>WAI</name>
+	<description>App from WAI Global</description>
+	<author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
+	<content src="index.html"/>
+	<!-- IOS Only -->
+	<preference name="target-device" value="universal"/>
+	<preference name="prerendered-icon" value="true"/>
+	<preference name="ios-statusbarstyle" value="black-translucent"/>
+	<preference name="detect-data-types" value="true"/>
+	<preference name="exit-on-suspend" value="false"/>
+	<preference name="EnableViewportScale" value="true"/>
+	<!-- definición de ios status bar -->
+	<!-- http://devgirl.org/2014/07/31/phonegap-developers-guid/ -->
+	<!-- <preference name="StatusBarOverlaysWebView" value="false"/> -->
+	<!-- <preference name="StatusBarBackgroundColor" value="#000000"/> -->
+	<!-- <preference name="StatusBarStyle" value="blacktranslucent" /> -->
+	<!-- Android Only -->
+	<!-- <preference name="android-minSdkVersion" value="8"/> -->
+	<!-- <preference name="android-maxSdkVersion" value="14"/> -->
+	<!-- <preference name="android-installLocation" value="auto"/> -->
+	<!-- General -->
+	<preference name="permissions" value="none"/>
+	<preference name="orientation" value="portrait"/>
+	<preference name="fullscreen" value="false"/>
+	<preference name="webviewbounce" value="true"/>
+	<preference name="stay-in-webview" value="false"/>
+	<preference name="show-splash-screen-spinner" value="true"/>
+	<preference name="auto-hide-splash-screen" value="true"/>
+	<preference name="disable-cursor" value="false"/>
+	<!-- plugins -->
+	<!-- <gap:plugin name="org.apache.cordova.battery-status"/> -->
+	<!-- <gap:plugin name="org.apache.cordova.camera"/> -->
+	<!-- <gap:plugin name="org.apache.cordova.media-capture"/> -->
+	<!-- <gap:plugin name="org.apache.cordova.console"/> -->
+	<!-- <gap:plugin name="org.apache.cordova.contacts"/> -->
+	<gap:plugin name="org.apache.cordova.device"/>
+	<!-- <gap:plugin name="org.apache.cordova.device-motion"/> -->
+	<!-- <gap:plugin name="org.apache.cordova.device-orientation"/> -->
+	<gap:plugin name="org.apache.cordova.dialogs"/>
+	<!-- <gap:plugin name="org.apache.cordova.file"/> -->
+	<!-- <gap:plugin name="org.apache.cordova.file-transfer"/> -->
+	<!-- <gap:plugin name="org.apache.cordova.geolocation"/> -->
+	<!-- <gap:plugin name="org.apache.cordova.globalization"/> -->
+	<gap:plugin name="org.apache.cordova.inappbrowser"/>
+	<gap:plugin name="org.apache.cordova.media"/>
+	<gap:plugin name="org.apache.cordova.network-information"/>
+	<gap:plugin name="org.apache.cordova.splashscreen"/>
+	<!-- <gap:plugin name="org.apache.cordova.vibration"/> -->
+    <!-- <gap:plugin name="com.phonegap.plugins.pushplugin"/>  -->
+
+	<platform name="ios">
+		<allow-intent href="itms:*"/>
+		<allow-intent href="itms-apps:*"/>
+		<!-- icon iPhone / iPod Touch -->
+		<icon src="res/icon/ios/icon-57.png" width="57" height="57" />
+		<icon src="res/icon/ios/icon-57-2x.png" width="114" height="114" />
+		<!-- icon iPad -->
+		<icon src="res/icon/ios/icon-72.png" width="72" height="72" />
+		<icon src="res/icon/ios/icon-72-2x.png" width="144" height="144" />
+		<!-- otros solicitados -->
+		<icon src="res/icon/ios/icon-76.png" width="76" height="76" />
+		<icon src="res/icon/ios/icon-120.png" width="120" height="120" />
+		<icon src="res/icon/ios/icon-152.png" width="152" height="152" />
+		<!-- ========================================================================= -->
+		<!-- splash screens -->
+		<!-- iPhone and iPod touch -->
+		<splash src="res/screen/ios/iphone-port.png" width="320" height="480" />
+		<splash src="res/screen/ios/iphone-port-2x.png" width="640" height="960" />
+		<!-- iPhone 5 / iPod Touch (5th Generation) -->
+		<splash src="res/screen/ios/iphone-port-568h-2x.png" width="640" height="1136" />
+		<!-- iPhone 6 -->
+		<splash src="res/screen/ios/iphone-6-port.png" platform="ios" width="1242" height="2208" />
+		<!-- iPad -->
+		<splash src="res/screen/ios/ipad-port.png" width="768" height="1024" />
+		<!-- Retina iPad -->
+		<splash src="res/screen/ios/ipad-port-2x.png" width="1536" height="2048" />
+	</platform>
+
+	<feature name="InAppBrowser">
+	    <param name="ios-package" value="CDVInAppBrowser" />
+	</feature>
+
+	<access origin="*"/>
+	<plugin name="cordova-plugin-whitelist" version="1"/>
+	<allow-intent href="http://*/*"/>
+	<allow-intent href="https://*/*"/>
+	<allow-intent href="tel:*"/>
+	<allow-intent href="sms:*"/>
+	<allow-intent href="mailto:*"/>
+	<allow-intent href="geo:*"/>
+
+</widget>

@@ -1,0 +1,674 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"loca",
+				"localStorage"
+			],
+			[
+				"fotn",
+				"font-size"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"appen",
+				"appendChild"
+			],
+			[
+				"menu",
+				"menu_dina"
+			],
+			[
+				"on",
+				"onload	Attr"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"backgroun",
+				"background-color"
+			],
+			[
+				"background-",
+				"background-size"
+			],
+			[
+				"s",
+				"script"
+			],
+			[
+				"con",
+				"conexion"
+			],
+			[
+				"mysqli_fe",
+				"mysqli_fethc_array"
+			],
+			[
+				"mysqli_fethc",
+				"mysqli_fethc_array"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"curr",
+				"currentN"
+			],
+			[
+				"ba",
+				"background-repeat"
+			],
+			[
+				"back",
+				"background-image"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"rep",
+				"repeat-x"
+			],
+			[
+				"i",
+				"item1"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"backgro",
+				"background-image"
+			],
+			[
+				"lo",
+				"localStorage"
+			],
+			[
+				"User",
+				"Username"
+			],
+			[
+				"sess",
+				"session_destroy"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"top",
+				"margin-top"
+			],
+			[
+				"user",
+				"username"
+			],
+			[
+				"my",
+				"mysql_query"
+			],
+			[
+				"pa",
+				"padding-top"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"bor",
+				"border-style"
+			],
+			[
+				"bak",
+				"background-color"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"li",
+				"li	Tag"
+			],
+			[
+				"b",
+				"block"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"po",
+				"port-xxhdpi"
+			],
+			[
+				"cn",
+				"contain"
+			],
+			[
+				"al",
+				"alt	Attr"
+			],
+			[
+				"margi",
+				"margin-right"
+			],
+			[
+				"to",
+				"text-bottom"
+			],
+			[
+				"ali",
+				"vertical-align"
+			],
+			[
+				"a",
+				"aGrados"
+			],
+			[
+				"parte",
+				"parteEntera"
+			],
+			[
+				"l",
+				"lang	Attr"
+			],
+			[
+				"ob",
+				"objeto_constructor"
+			],
+			[
+				"objeto",
+				"objeto_literal"
+			],
+			[
+				"lista",
+				"lista_obj"
+			],
+			[
+				"logico",
+				"logico_obj"
+			],
+			[
+				"ima",
+				"imageUrl"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"fu",
+				"function"
+			],
+			[
+				"pro",
+				"Product"
+			],
+			[
+				"st",
+				"String"
+			],
+			[
+				"iin",
+				"inline-block"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"c",
+				"class	Attr"
+			],
+			[
+				"magin",
+				"margin-right"
+			],
+			[
+				"h",
+				"h1"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 150.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"package control in",
+				"Package Control: Install Package"
+			],
+			[
+				"package control list",
+				"Package Control: List Packages"
+			],
+			[
+				"package control install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: insta",
+				"Package Control: Install Package"
+			],
+			[
+				"package control insta",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Build: Cancel"
+			]
+		],
+		"width": 512.0
+	},
+	"console":
+	{
+		"height": 181.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/xampp/htdocs/wai-ios/js/funciones.js",
+		"/C/xampp/htdocs/wai-ios/index.es.html",
+		"/C/xampp/htdocs/wai-ios/index.pt.html",
+		"/C/xampp/htdocs/wai-ios/index.en.html",
+		"/C/xampp/htdocs/wai-ios/css/index.css",
+		"/C/xampp/htdocs/wai-ios/index.html",
+		"/C/xampp/htdocs/wai-ios/inicio.en.html",
+		"/C/xampp/htdocs/wai-ios/inicio.es.html",
+		"/C/xampp/htdocs/wai-ios/inicio.pt.html",
+		"/C/xampp/htdocs/wai-ios/config.xml",
+		"/C/_Aprender/Cursos Video/Udemy/JavaScript - Introducción a/Archivos base/curso Introduccion a Javascript/02_arreglos/08_arreglos_multidimensionales/arreglos_multidimensionales.js",
+		"/C/_Aprender/Cursos Video/Udemy/JavaScript - Introducción a/Archivos base/curso Introduccion a Javascript/02_arreglos/07_metodos de arreglos/arrays2.js",
+		"/C/_Aprender/Cursos Video/Udemy/JavaScript - Introducción a/Archivos base/curso Introduccion a Javascript/02_arreglos/06_arrays/arrays.js",
+		"/C/_Aprender/Cursos Video/Udemy/JavaScript - Introducción a/Archivos base/curso Introduccion a Javascript/01_Conceptos basicos/04_concatenacion/concatenacion.js",
+		"/C/_Aprender/Cursos Video/Udemy/JavaScript - Introducción a/Archivos base/curso Introduccion a Javascript/01_Conceptos basicos/03_operadores/operadores.js",
+		"/C/_Aprender/Cursos Video/Udemy/JavaScript - Introducción a/Archivos base/curso Introduccion a Javascript/01_Conceptos basicos/02_variables/variables.js",
+		"/C/_Aprender/Cursos Video/Udemy/JavaScript - Introducción a/Archivos base/curso Introduccion a Javascript/01_Conceptos basicos/02_variables/variables.html",
+		"/C/_Aprender/Cursos Video/Udemy/JavaScript - Introducción a/Archivos base/curso Introduccion a Javascript/01_Conceptos basicos/01_javascript_y_html/javascript_interno.html",
+		"/C/_Aprender/Cursos Video/Udemy/JavaScript - Introducción a/Archivos base/curso Introduccion a Javascript/01_Conceptos basicos/01_javascript_y_html/javascript_externo.html",
+		"/C/_Aprender/Cursos Video/Udemy/JavaScript - Introducción a/Archivos base/curso Introduccion a Javascript/01_Conceptos basicos/01_javascript_y_html/mi_archivo.js",
+		"/C/xampp/htdocs/wai-android/config.xml",
+		"/C/_Aprender/Cursos Video/Udemy/Sublime Text/Archivos base/Ejercicios/04-divisiones-grupos/index.html",
+		"/C/_Aprender/Cursos Video/Udemy/Sublime Text/Archivos base/Ejercicios/05-practica-edicion-multiple/index.html",
+		"/C/_Aprender/Cursos Video/Udemy/Sublime Text/Archivos base/Ejercicios/01-Interfaz/download.html",
+		"/C/Users/Nelson/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Nelson/AppData/Roaming/Sublime Text 3/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/Users/Nelson/AppData/Roaming/Sublime Text 3/Packages/Default/Preferences.sublime-settings",
+		"/C/_Aprender/Cursos Video/Udemy/Sublime Text/Archivos base/Ejercicios/04-divisiones-grupos/style.css",
+		"/C/_Aprender/Cursos Video/Udemy/Sublime Text/Archivos base/Ejercicios/03-edicion/index.html",
+		"/C/_Aprender/Cursos Video/Udemy/Sublime Text/Archivos base/Ejercicios/01-Interfaz/index.html",
+		"/C/xampp/htdocs/wai001/js/funciones.js",
+		"/C/xampp/htdocs/wai001/documents.en.html",
+		"/C/xampp/htdocs/wai001/menu_dinamico.html",
+		"/C/xampp/htdocs/wai001/config.xml",
+		"/C/xampp/htdocs/wai001/index.html",
+		"/C/xampp/htdocs/wai001/css/menuv.css",
+		"/C/Users/Nelson/Downloads/Ejemplos de Menu/jQuery.mmenu-master/jQuery.mmenu-master/index.html",
+		"/C/xampp/htdocs/wai-development/documents.en.html",
+		"/C/xampp/htdocs/wai-development/config.xml",
+		"/C/xampp/htdocs/wai-development/index.html",
+		"/C/xampp/htdocs/wai-development/index.en.html",
+		"/C/xampp/htdocs/wai/documents.en.html",
+		"/C/xampp/htdocs/wai-development/js/cordova-1.5.0.js",
+		"/C/xampp/htdocs/wai-development/inicio.en.html",
+		"/C/xampp/htdocs/wai-development/css/inicio.css",
+		"/C/xampp/htdocs/wai-development/sendorder.en.html",
+		"/C/xampp/htdocs/wai-development/sendorder.es.html",
+		"/C/xampp/htdocs/wai-development/sendorder.pt.html",
+		"/C/xampp/htdocs/wai-development/documents.es.html",
+		"/C/xampp/htdocs/wai-development/documents.pt.html",
+		"/C/xampp/htdocs/wai-development/index.es.html",
+		"/C/xampp/htdocs/wai-development/index.pt.html",
+		"/C/xampp/htdocs/wai-development/js/funciones.js",
+		"/C/xampp/htdocs/wai/config.xml",
+		"/C/xampp/htdocs/wai-development/nel.bat",
+		"/C/xampp/htdocs/wai-development/css/index.css",
+		"/C/xampp/htdocs/wai/index.en.html",
+		"/C/xampp/htdocs/wai-development/inicio.es.html",
+		"/C/xampp/htdocs/wai-development/inicio.pt.html",
+		"/C/xampp/htdocs/wai-development/inicio.en.anterior.html",
+		"/C/xampp/htdocs/wai-prueba/config.xml",
+		"/C/xampp/htdocs/wai-development/php/inicio.php",
+		"/C/xampp/htdocs/wai-development/datos wai.txt",
+		"/C/xampp/htdocs/wai/index.html",
+		"/C/xampp/htdocs/wai-development/under.html",
+		"/C/xampp/htdocs/wai-development/css/menuv.css",
+		"/C/xampp/htdocs/wai-development/newprod.es.html",
+		"/C/xampp/htdocs/wai-development/newprod.pt.html",
+		"/C/xampp/htdocs/wai-development/index.en.anterior.html",
+		"/C/xampp/htdocs/wai/css/index.css",
+		"/C/xampp/htdocs/wai-development/php/reply.php",
+		"/C/xampp/htdocs/wai-development/prueba001.html",
+		"/C/Users/Nelson/Downloads/jquery 2/jquery-2.2.0.min.map",
+		"/C/Users/Nelson/Downloads/jquery 2/jquery-2.2.0.js",
+		"/C/xampp/htdocs/wai-development/website.pt.html",
+		"/C/xampp/htdocs/wai-development/website.es.html",
+		"/C/xampp/htdocs/wai-development/website.en.html",
+		"/C/xampp/htdocs/wai-development/share.en.html",
+		"/C/xampp/htdocs/wai-development/share.es.html",
+		"/C/xampp/htdocs/wai-development/share.pt.html",
+		"/C/xampp/htdocs/wai-development/registro.en.html",
+		"/C/xampp/htdocs/wai-development/registro.es.html",
+		"/C/xampp/htdocs/wai-development/registro.pt.html",
+		"/C/xampp/htdocs/wai-development/news.es.html",
+		"/C/xampp/htdocs/wai-development/news.pt.html",
+		"/C/xampp/htdocs/wai-development/lostpass.en.html",
+		"/C/xampp/htdocs/wai-development/lostpass.es.html",
+		"/C/xampp/htdocs/wai-development/lostpass.pt.html",
+		"/C/xampp/htdocs/wai-development/contact.en.html",
+		"/C/xampp/htdocs/wai-development/contact.es.html",
+		"/C/xampp/htdocs/wai-development/contact.pt.html",
+		"/C/xampp/htdocs/wai-development/js/menuv.js",
+		"/C/xampp/htdocs/wai-development/news.en.html",
+		"/C/xampp/htdocs/wai-development/menu_en.txt",
+		"/C/xampp/htdocs/wai-development/prueba04.html",
+		"/C/xampp/htdocs/wai-development/index.php",
+		"/C/xampp/htdocs/wai-development/index.es.php",
+		"/C/xampp/htdocs/wai-development/index.pt.php",
+		"/C/xampp/htdocs/wai-development/news.en.php",
+		"/C/xampp/htdocs/PHP/Practica1/procesar.php",
+		"/C/xampp/htdocs/wai/index.es.html",
+		"/C/xampp/htdocs/wai/index.pt.html",
+		"/C/xampp/htdocs/wai/contact.en.html",
+		"/C/xampp/htdocs/www/css/index.css",
+		"/C/xampp/htdocs/www/css/inicio.css",
+		"/C/xampp/htdocs/www/share.pt.html",
+		"/C/xampp/htdocs/www/share.es.html",
+		"/C/xampp/htdocs/www/share.en.html",
+		"/C/xampp/htdocs/www/index.en.html",
+		"/C/xampp/htdocs/www/index.es.html",
+		"/C/xampp/htdocs/www/index.pt.html",
+		"/C/xampp/htdocs/www/css/menuv.css",
+		"/C/xampp/htdocs/www/under.html",
+		"/C/xampp/htdocs/www/index.html",
+		"/C/xampp/htdocs/www/UnderC.html",
+		"/C/xampp/htdocs/www/index.en.php",
+		"/C/xampp/htdocs/www/contact.en.php",
+		"/C/xampp/htdocs/www/prueba03.html",
+		"/C/xampp/htdocs/www/php/wai_menu.en.php",
+		"/C/xampp/htdocs/www/php/wai_accion.php",
+		"/C/xampp/htdocs/www/login.en.html",
+		"/C/xampp/htdocs/www - otros/login.en.html",
+		"/C/xampp/htdocs/www/datos wai.txt",
+		"/C/_Aprender/Cursos Video/_Finalizados/PHP y MYSQL desde cero/Archivos Base/PHP ejemplos desarrollados/Practica1/condicionif.php",
+		"/C/xampp/htdocs/www/php/Prueba01.php",
+		"/C/_Aprender/Cursos Video/Web services con PHP/Resumen.txt",
+		"/C/xampp/htdocs/www/news.en.html",
+		"/C/xampp/htdocs/www/news.es.html"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 105.0,
+		"where_history":
+		[
+			"C:\\xampp\\htdocs\\wai-ios",
+			"C:\\xampp\\htdocs\\www",
+			"C:\\xampp\\htdocs\\Primera\\node_modules\\multer",
+			"<open folders>"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"cordova",
+			"    <script type=\"text/javascript\" charset=\"utf-8\" src=\"cordova.js\"></script>\n",
+			"color",
+			"console",
+			"sublimetext",
+			"idioma",
+			"nav",
+			"div",
+			"nav",
+			"div",
+			"UIwebview",
+			"name",
+			"phonegap",
+			"jpg",
+			"png",
+			"				<",
+			"ic_signina",
+			"				\n",
+			"usuarioEnviado",
+			"index",
+			"idioma",
+			"datosUsuario",
+			"login\nlogin",
+			"loginlogin",
+			"login-submit",
+			"en",
+			"“",
+			"xhdpi",
+			"hdpi",
+			"<a href=\"#\" onclick=\"window.open('http://www.wai-news.com', '_system');\">WAI Web Site</a>",
+			"				<",
+			"php",
+			"html",
+			"index",
+			"idioma",
+			"php",
+			"\">\n",
+			"?\";\n",
+			"contenido",
+			"titulo",
+			"background",
+			"@",
+			"media",
+			"enviar.php",
+			"#ff0000",
+			"red",
+			"Database",
+			"usuario",
+			"idMeta",
+			"meta",
+			"metas",
+			"idMeta",
+			"w.png",
+			"n.png",
+			"g.png",
+			"b.png",
+			"a.png",
+			"g.png",
+			"a.png",
+			"w.png",
+			"a.png",
+			"w.png",
+			"'",
+			"top",
+			"\"progreso\"",
+			"right",
+			"yellow",
+			"top",
+			"toolbar.css",
+			"\n        ",
+			"css",
+			"comment",
+			"meta",
+			"dest:",
+			"comment",
+			"			div(class=\"form-group\")\n				label Nombre\n				input(type=\"text\" name=\"title\" placeholder=\"Nombre del producto\" class=\"form-control\")			\n",
+			"			li(class=\"col-md-3 inline-block\")\n				a(href=\"menu.html\") Menú\n",
+			"<div",
+			"div",
+			"link",
+			"meta",
+			"		",
+			"link",
+			"delay",
+			"size"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"var"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 532.0
+	},
+	"pinned_build_system": "",
+	"project": "wai-ios.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\_Aprender\\Cursos Video\\Udemy\\Sublime Text\\Archivos base\\Ejercicios\\01-Interfaz\\index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 219.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

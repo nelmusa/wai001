@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta charset="utf-8"> 
+    <link rel="stylesheet" type="text/css" media="all" href="css/menuv.css" />
+    <title>Enviar Orden</title>
+    <script type="text/javascript" src="js/funciones.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        document.addEventListener("deviceready", onDeviceReady, false);
+        function onDeviceReady() {
+            document.addEventListener("offline", onOffline, false);
+        }
+    </script>
+</head>
+
+<body onload="menu_dina('send')">
+    <div id="content">
+        <div id="header">
+            <div class="regreso" onclick="javascript:history.back()">
+               <img src="img/back64.png" style="width: 50%; height: auto">                
+            </div>
+            <div class='title hamburger-action'>Enviar Orden</div>
+            <div class="hamburger" align="right">
+                <img src="img/hamburguer64.png" style="width: 50%; height: auto">
+            </div>
+        </div> 
+        <nav id="clear"></nav>
+    </div>
+
+    <!--=====================================-->
+   <div class="sitio">
+        <iframe width="640" height="360" src="http://www.wai-news.com/index.php?option=com_uniform&view=form&form_id=3&show_form_title=0&show_form_description=0&Itemid=799" frameborder="0" allowfullscreen></iframe>
+    </div>   
+    <!--=====================================-->
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/menuv.js"></script>
+
+</body>
+</html>
