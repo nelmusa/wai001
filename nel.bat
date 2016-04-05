@@ -1,5 +1,3 @@
 ﻿git add .
-
 git commit -m "Nuevo"
-
-git push origin master
+git push wai001 master
