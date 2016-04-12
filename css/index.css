@@ -123,7 +123,7 @@ ul ul {
 }
 
 /* imagenes de los iconos*/
-/*.item0 > a:before {background-image: url(../img/hdpi/ic_signout_a.png);}*/
+.item0 > a:before {background-image: url(../img/hdpi/ic_signout_a.png);}
 .item1 > a:before {background-image: url(../img/hdpi/ic_news_a.png);}
 .item2 > a:before {background-image: url(../img/hdpi/ic_web_a.png);}
 .item3 > a:before {background-image: url(../img/hdpi/ic_doc_a.png);}
@@ -133,7 +133,7 @@ ul ul {
 .item7 > a:before {background-image: url(../img/hdpi/ic_new_a.png);}
 .item8 > a:before {background-image: url(../img/hdpi/ic_feedback_a.png);}
 
-/*.item0:hover > a:before {background-image: url(../img/hdpi/ic_signout_w.png);}*/
+.item0:hover > a:before {background-image: url(../img/hdpi/ic_signout_w.png);}
 .item1:hover > a:before {background-image: url(../img/hdpi/ic_news_w.png);}
 .item2:hover > a:before {background-image: url(../img/hdpi/ic_web_w.png);}
 .item3:hover > a:before {background-image: url(../img/hdpi/ic_doc_w.png);}

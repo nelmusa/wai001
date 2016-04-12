@@ -2,12 +2,11 @@
 <html>
 <head>
 	<meta charset="utf-8" />
-	<link rel="stylesheet" type="text/css" href="css/notification.css" />
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<script type="text/javascript" charset="utf-8">
 	
-		localStorage.version = "1.0.3";
+		localStorage.version = "1.0.4";
 
 		var idioma = localStorage.idioma;
 		var usuario = localStorage.usuario;
@@ -18,7 +17,7 @@
 			localStorage.idioma = "en";
 		}
 
-		// if (usuario != null && usuario != "" && usuario != false && usuario != undefined){
+		if (usuario != null && usuario != "" && usuario != false && usuario != undefined){
 			if (idioma == "es") {
 				self.location.href="index.es.html";
 			} else if (idioma == "pt") {
@@ -26,15 +25,15 @@
 			} else {
 				self.location.href="index.en.html";
 			}
-		// } else {
-			// if (idioma == "es") {
-				// self.location.href="inicio.es.html";
-			// } else if (idioma == "pt") {
-				// self.location.href="inicio.pt.html";
-			// } else {
-				// self.location.href="inicio.en.html";
-			// }
-		// }
+		} else {
+			if (idioma == "es") {
+				self.location.href="inicio.es.html";
+			} else if (idioma == "pt") {
+				self.location.href="inicio.pt.html";
+			} else {
+				self.location.href="inicio.en.html";
+			}
+		}
 
 	</script>
 </head>

@@ -177,7 +177,7 @@ function noti_mail_f (buttonIndex) {
 	  	// 'Device UUID: '    + device.uuid    + '<br />' + 
 
 	    var link = "mailto:info@wai-news.com?"
-	             // + "cc=" + localStorage.email
+	             + "cc=" + localStorage.email
 	             + "&subject=" + encodeURI(msg002[0])
 	             + "&body=" + encodeURI(msg002[1]);
 	    window.location.href = link;
@@ -229,14 +229,12 @@ function exitFromApp(buttonIndex){
 
 function checkConnection() {
     var estado = "si";
-
 	var networkState = navigator.connection.type;
 	if(networkState==Connection.NONE){
 		estado = "no";
 	}else if(networkState==Connection.UNKNOWN){
 		estado = "no";
 	}
-	
 	return(estado);
 }
 
