@@ -1,3 +1,21 @@
+function CambiarHoja(pageNum) {
+	var idioma = localStorage.idioma;
+	if (pageNum == 1) { var pageURL = 'intro1.html'; }
+	if (pageNum == 2) { var pageURL = 'intro2.html'; }
+	if (pageNum == 3) { var pageURL = 'intro3.html'; }
+	if (pageNum == 4) { var pageURL = 'intro4.html'; }
+	if (pageNum == 5) { 
+		if (idioma == "es") {
+			var pageURL = "inicio.es.html";
+		} else if (idioma == "pt") {
+			var pageURL = "inicio.pt.html";
+		} else {
+			var pageURL = "inicio.en.html";
+		}
+	}
+	self.location.href = pageURL;
+}
+
 function onOffline() {
 	var idioma = localStorage.idioma;
 	if (idioma == 'es'){
