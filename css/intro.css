@@ -1,0 +1,19 @@
+body {
+	font-size: 4em;
+    text-align: left;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.img001 {
+	width: 35%;
+	margin-top: 10%;
+}
+
+.img002 {
+	width: 90%;
+}
+
+.botones {
+	font-size: 250%;
+}
