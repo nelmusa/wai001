@@ -1,13 +1,13 @@
 body {
-	font-size: 4em;
-    text-align: left;
-    font-family: sans-serif;
-    margin: 0;
+	font-size: 2em;
+	text-align: left;
+	font-family: sans-serif;
+	margin: 0;
 }
 
 .img001 {
 	width: 35%;
-	margin-top: 10%;
+	margin-top: 85px;
 }
 
 .img002 {
@@ -16,4 +16,37 @@ body {
 
 .botones {
 	font-size: 250%;
+}
+
+/*=========================================*/
+
+#header {
+	background-color: #071F5D;
+	text-decoration: none;
+	position: fixed;
+	width: 100%;
+	box-shadow: 5px 5px 5px black;
+	margin-top: 0%;
+}
+
+#detail {
+	margin-top: 0%;
+}
+
+.back {
+	cursor: pointer;
+	float: left;
+	margin-top: 20px;
+	display: block;
+	margin-left: 10px;
+	position: relative;
+}
+
+.next {
+	cursor: pointer;
+	float: right;
+	margin-top: 20px;
+	display: block;
+	margin-right: 10px;
+	position: relative;
 }
