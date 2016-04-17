@@ -20,7 +20,7 @@ body {
     padding: 10px;
     width: 80%;
     background-color: #E8E8E8;
-    margin-left: 8%;
+    margin-left: 9%;
     border-radius: 10px;
     box-shadow: 10px 10px 10px black;
 }
@@ -41,10 +41,10 @@ body {
     font-size: 2em;
     margin-bottom: 10px;
     margin-left: 5%;
-    
-    display: block;
-    position: relative;
     box-shadow: 3px 3px 3px black;
+    display: block;
+    
+    position: relative;
 }
 
 .login-card input[type=email], input[type=password] {
@@ -53,11 +53,12 @@ body {
     font-size: 2em;
     margin-bottom: 10px;
     margin-left: 5%;
+    box-shadow: 3px 3px 3px black;
+    display: block;
 
     background: #fff;
     border: 1px solid #d9d9d9;
     padding: 0 8px;
-    box-shadow: 3px 3px 3px black;
     box-sizing: border-box;
     border-radius: 10px;
 }
