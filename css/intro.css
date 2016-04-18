@@ -1,22 +1,46 @@
+
+/*body {*/
+    /*font-size:4em;*/
+    /*-webkit-user-select:none;*/
+    /*-webkit-text-size-adjust:none;*/
+    /*font-family:helvetica;*/
+    /*bottom: 35px;*/
+/*}*/
+
+
+body {
+    font-size: 25px;
+    /*background: #E8E8E8;*/
+    /*margin-top: 5%;*/
+	font-family: sans-serif;
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    /*font-weight: bold;*/
+}
+@media screen and (max-width: 1280px) {
+    body { font-size: 23px; }
+}
+@media screen and (max-width: 900px) {
+    body { font-size: 21px; }
+}
+@media screen and (max-width: 700px){
+    body { font-size: 19px; }
+}
+@media screen and (max-width: 400px){
+    body { font-size: 17px; }
+}
+
+
+
 body,ul,li {
     padding:0;
     margin:0;
     border:0;
 }
 
-body {
-    font-size:1em;
-	font-family: sans-serif;
-    /*-webkit-user-select:none;*/
-    /*-webkit-text-size-adjust:none;*/
-    /*font-family:helvetica;*/
-    /*bottom: 35px;*/
-}
-
 .img001 {
-	width: 35%;
-	margin-top: 30px;
-	max-width: 150px; 
+	width: 40%;
+	margin-top: 40px;
+	max-width: 160px; 
 	height: auto;
 }
 
@@ -76,7 +100,7 @@ body {
 #scroller li {
     padding:0 10px;
     line-height:40px;
-    font-size:75%;
+    /*font-size:75%;*/
     /*height:40px;*/
     /*height:100px;*/
     /*border-bottom:1px solid red;*/
@@ -144,8 +168,8 @@ body {
     width:20%; 
     height:160px;
     text-align:center;
-    font-family:georgia;
-    font-size:18px;
+    /*font-family:georgia;*/
+    /*font-size:18px;*/
     line-height:140%;
     /*-webkit-box-sizing:border-box;*/
     /*-moz-box-sizing:border-box;*/
@@ -161,7 +185,7 @@ body {
 
 #prev1, #next1 {
     font-weight:bold;
-    font-size:14px;
+    /*font-size:14px;*/
     padding:5px 0;
     width:80px;
     position: absolute;
