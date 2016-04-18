@@ -6,6 +6,25 @@
 	<script type="text/javascript" src="js/iscroll_4_2.js"></script>
 	<script type="text/javascript" src="js/intro.js" ></script>
 	<link rel="stylesheet" type="text/css" href="css/intro.css"/>
+	<script type="text/javascript">
+		function sel_inicio() {
+			var idioma = localStorage.idioma;
+
+			if (idioma != null && idioma != "" && idioma != false && idioma != undefined){
+			} else {
+				idioma = "en";
+				localStorage.idioma = "en";
+			}
+
+			if (idioma == "es") {
+				self.location.href="inicio.es.html";
+			} else if (idioma == "pt") {
+				self.location.href="inicio.pt.html";
+			} else {
+				self.location.href="inicio.en.html";
+			}
+		}
+	</script>
 </head>
 
 <body onload="loaded()">
@@ -59,6 +78,11 @@
 							<!-- <p>Products example</p> -->
 							<img class="img002" src="img/Productos.png">							
 						</li>
+						<li>
+							<img class="img001" src="res/icon/ios/icon-152.png">
+							<h1>WAI Global</h1>
+							<a class="boton_login" onclick="javascript:sel_inicio()">Login</a>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -76,6 +100,7 @@
 					<li>2</li>
 					<li>3</li>
 					<li>4</li>
+					<li>5</li>
 				</ul>
 			</div>
 			<!-- <div id="next1" onclick="myScroll1.scrollToPage('next', 0);return false">next &rarr;</div> -->

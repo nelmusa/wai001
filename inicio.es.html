@@ -17,6 +17,10 @@
         function onDeviceReady() {
 		    document.addEventListener("offline", onOffline, false);
         }
+
+       function regresar(){
+        	self.location.href="intro.html";
+        }
 	</script>
 
 </head>
@@ -42,15 +46,23 @@
 				<a href="javascript:selector('regi');">Registrarse</a>
 				<!-- <a href="registro.en.html">Registrarse</a> • <a href="lostpass.en.html">Forgot Password</a> -->
 			</div>
-			<div><a></a></div>
-			<div align="center">
-		  		<input type="radio" onclick="CambiarHoja(1)" name="hoja" value="1">
-		  		<input type="radio" onclick="CambiarHoja(2)" name="hoja" value="2"> 	
-		  		<input type="radio" onclick="CambiarHoja(3)" name="hoja" value="3"> 	
-		  		<input type="radio" onclick="CambiarHoja(4)" name="hoja" value="4"> 	
-		 	  	<input type="radio" onclick="CambiarHoja(0)" name="hoja" value="5" checked="true">
+		</div>
+		<div id="footer">
+			<div id="nav1">
+				<!-- <div id="prev1" onclick="myScroll1.scrollToPage('prev', 0);return false">&larr; prev</div> -->
+				<div id="prev1" onclick="javascript:regresar();">
+					<img src="img/back64.png" height="25px">
+				</div>
+				<div class="indicator-wrapper">
+					<ul id="indicator1">
+						<li>1</li>
+						<li>2</li>
+						<li>3</li>
+						<li>4</li>
+						<li class="active">5</li>
+					</ul>
+				</div>
 			</div>
-
 		</div>
 	</div>
 
