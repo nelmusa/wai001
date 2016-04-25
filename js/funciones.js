@@ -281,6 +281,14 @@ function checkConnection() {
 	return(estado);
 }
 
+function val_usuario() {
+	var usuario = localStorage.usuario;
+	if (usuario != null && usuario != "" && usuario != false && usuario != undefined){
+		return true;
+	}else {
+		return false;
+	}
+}
 //===================================================================
 
 function selector(rutina){
@@ -303,12 +311,15 @@ function selector(rutina){
         	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=96&Itemid=2333', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
 	     	ref.addEventListener("loaderror", onOffline, false);
     	}else if(rutina=="dcat"){
-    		var usuario = localStorage.usuario;
-			if (usuario != null && usuario != "" && usuario != false && usuario != undefined){
+			if (val_usuario()){
 	        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
 		     	ref.addEventListener("loaderror", onOffline, false);
 		    }else {
 		    	self.location.href="inicio.en.html";
+		    	if (val_usuario()){
+		        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
+			     	ref.addEventListener("loaderror", onOffline, false);
+		    	}
 		    }
     	}else if(rutina=="send"){
 			self.location.href="sendorder.en.html";
@@ -340,12 +351,15 @@ function selector(rutina){
         	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=96&Itemid=2333', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
 	     	ref.addEventListener("loaderror", onOffline, false);
     	}else if(rutina=="dcat"){
-    		var usuario = localStorage.usuario;
-			if (usuario != null && usuario != "" && usuario != false && usuario != undefined){
+			if (val_usuario()){
 	        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
 		     	ref.addEventListener("loaderror", onOffline, false);
 		    }else {
 		    	self.location.href="inicio.en.html";
+		    	if (val_usuario()){
+		        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
+			     	ref.addEventListener("loaderror", onOffline, false);
+		    	}
 		    }
     	}else if(rutina=="send"){
 			self.location.href="sendorder.es.html";
@@ -377,12 +391,15 @@ function selector(rutina){
         	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=96&Itemid=2333', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
 	     	ref.addEventListener("loaderror", onOffline, false);
     	}else if(rutina=="dcat"){
-    		var usuario = localStorage.usuario;
-			if (usuario != null && usuario != "" && usuario != false && usuario != undefined){
+			if (val_usuario()){
 	        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
 		     	ref.addEventListener("loaderror", onOffline, false);
 		    }else {
 		    	self.location.href="inicio.en.html";
+		    	if (val_usuario()){
+		        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
+			     	ref.addEventListener("loaderror", onOffline, false);
+		    	}
 		    }
     	}else if(rutina=="send"){
 			self.location.href="sendorder.pt.html";
