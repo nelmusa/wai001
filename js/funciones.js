@@ -315,11 +315,7 @@ function selector(rutina){
 	        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
 		     	ref.addEventListener("loaderror", onOffline, false);
 		    }else {
-		    	self.location.href="inicio.en.html";
-		    	if (val_usuario()){
-		        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
-			     	ref.addEventListener("loaderror", onOffline, false);
-		    	}
+		    	showAlert("You need to connect to use this option","Information");
 		    }
     	}else if(rutina=="send"){
 			self.location.href="sendorder.en.html";
@@ -355,11 +351,7 @@ function selector(rutina){
 	        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
 		     	ref.addEventListener("loaderror", onOffline, false);
 		    }else {
-		    	self.location.href="inicio.en.html";
-		    	if (val_usuario()){
-		        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
-			     	ref.addEventListener("loaderror", onOffline, false);
-		    	}
+		    	showAlert("Necesita conectarse para usar esta opción","Información");
 		    }
     	}else if(rutina=="send"){
 			self.location.href="sendorder.es.html";
@@ -395,11 +387,7 @@ function selector(rutina){
 	        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
 		     	ref.addEventListener("loaderror", onOffline, false);
 		    }else {
-		    	self.location.href="inicio.en.html";
-		    	if (val_usuario()){
-		        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
-			     	ref.addEventListener("loaderror", onOffline, false);
-		    	}
+		    	showAlert("É necessário ligar para usar esta opção","Informação");
 		    }
     	}else if(rutina=="send"){
 			self.location.href="sendorder.pt.html";
