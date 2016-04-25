@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	<script type="text/javascript" charset="utf-8">
 	
-		localStorage.version = "1.0.4";
+		localStorage.version = "1.0.5";
 
 		var idioma = localStorage.idioma;
 		var usuario = localStorage.usuario;
@@ -17,7 +17,7 @@
 			localStorage.idioma = "en";
 		}
 
-		if (usuario != null && usuario != "" && usuario != false && usuario != undefined){
+		// if (usuario != null && usuario != "" && usuario != false && usuario != undefined){
 			if (idioma == "es") {
 				self.location.href="index.es.html";
 			} else if (idioma == "pt") {
@@ -25,8 +25,8 @@
 			} else {
 				self.location.href="index.en.html";
 			}
-		} else {
-			self.location.href="intro.html";
+		// } else {
+			// self.location.href="intro.html";
 			
 			// if (idioma == "es") {
 				// self.location.href="inicio.es.html";
@@ -35,7 +35,7 @@
 			// } else {
 				// self.location.href="inicio.en.html";
 			// }
-		}
+		// }
 
 	</script>
 </head>

@@ -29,12 +29,9 @@
 	<div align="center">
 		<img src="img/WAI Logo.png" style="width: 20%; max-width: 150px; height: auto">
 	</div>
-	<h1 id="usuario">Aqui va el nombre del usuario</h1>
+	<h1 id="usuario"> </h1>
 	<div id="wrapper">
 		<ul class="menu">
-			<li class="item0">
-				<a href="javascript:signout();">Desligar</a>
-			</li>
 			<li class="item1">
 				<!-- <a href="news.pt.html">Publicações WAI<span>0</span></a> -->
 				<a href="javascript:selector('news');">Publicações WAI</a>
@@ -42,9 +39,16 @@
 			<li class="item2">
 				<a id="Web" href="javascript:selector('web');">WAI Web Site</a>
 			</li>
-			<li class="item3">
+			<!-- <li class="item3"> -->
 				<!-- <a href="documents.pt.html">Arquivos<span>0</span></a> -->
-				<a href="javascript:selector('docu');">Arquivos</a>
+				<!-- <a href="javascript:selector('docu');">Arquivos</a> -->
+			<!-- </li> -->
+			<li class="item3">
+				<a href="#">Arquivos<mas>+</mas></a>
+				<ul>
+					<li class="subitem1"><a href="javascript:selector('dgen');">Panfletos</a></li>
+					<li class="subitem2"><a href="javascript:selector('dcat');">Catálogos</a></li>
+				</ul>
 			</li>
 			<li class="item4">
 				<a href="#">Acesso Ao Cliente<mas>+</mas></a>
@@ -66,6 +70,9 @@
 			</li>
 			<li class="item8">
 				<a href="javascript:noti_mail();">Feedback</a>
+			</li>
+			<li class="item9" id="inout">
+				<a id="inout1" href="javascript:signinout();">Conectar</a>
 			</li>
 		</ul>
 	</div>

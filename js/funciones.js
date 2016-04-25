@@ -1,21 +1,3 @@
-function CambiarHoja(pageNum) {
-	var idioma = localStorage.idioma;
-	if (pageNum == 1) { var pageURL = 'intro1.html'; }
-	if (pageNum == 2) { var pageURL = 'intro2.html'; }
-	if (pageNum == 3) { var pageURL = 'intro3.html'; }
-	if (pageNum == 4) { var pageURL = 'intro4.html'; }
-	if (pageNum == 5) { 
-		if (idioma == "es") {
-			var pageURL = "inicio.es.html";
-		} else if (idioma == "pt") {
-			var pageURL = "inicio.pt.html";
-		} else {
-			var pageURL = "inicio.en.html";
-		}
-	}
-	self.location.href = pageURL;
-}
-
 function onOffline() {
 	var idioma = localStorage.idioma;
 	if (idioma == 'es'){
@@ -57,10 +39,33 @@ function cambiar_idioma(idioma)
 }
 
 function user_ini () {
-	var user = localStorage.usuario;
+	var usuario = localStorage.usuario;
 
-	var tit = document.getElementById('usuario');
-	tit.childNodes[0].nodeValue = user;
+	if (usuario != null && usuario != "" && usuario != false && usuario != undefined){
+
+		var tit = document.getElementById('usuario');
+		tit.childNodes[0].nodeValue = usuario;
+
+		var idioma = localStorage.idioma;
+		if (idioma != null && idioma != "" && idioma != false && idioma != undefined){
+		} else {
+			idioma = "en";
+			localStorage.idioma = "en";
+		}
+
+		var iao = document.getElementById('inout1');
+		if (idioma == "es") {
+			iao.childNodes[0].nodeValue = "Desconectar";
+		} else if (idioma == "pt") {
+			iao.childNodes[0].nodeValue = "Desligar";
+		} else {
+			iao.childNodes[0].nodeValue = "Sign Out";
+		}
+
+		document.getElementById('inout').className = 'item9';
+	} else {
+		document.getElementById('inout').className = 'item91';
+	}
 
 	new_span();
 }
@@ -95,9 +100,29 @@ function menu_dina(opcion){
     }
 }
 
-function signout(){
-	localStorage.usuario = "";
-	self.location.href="index.html";
+function signinout(){
+	var usuario = localStorage.usuario;
+
+	if (usuario != null && usuario != "" && usuario != false && usuario != undefined){
+		localStorage.usuario = "";
+		self.location.href="index.html";
+	} else {
+		var idioma = localStorage.idioma;
+	
+		if (idioma != null && idioma != "" && idioma != false && idioma != undefined){
+		} else {
+			idioma = "en";
+			localStorage.idioma = "en";
+		}
+	
+		if (idioma == "es") {
+			self.location.href="inicio.es.html";
+		} else if (idioma == "pt") {
+			self.location.href="inicio.pt.html";
+		} else {
+			self.location.href="inicio.en.html";
+		}
+	}
 }
 
 //===================================================================
@@ -274,9 +299,17 @@ function selector(rutina){
 		}else if(rutina=="web"){
         	var ref = window.open('http://www.wai-news.com', '_blank','location=yes');
 		    ref.addEventListener("loaderror", onOffline, false);
-    	}else if(rutina=="docu"){
-        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=category&layout=blog&id=89&Itemid=2121', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
+    	}else if(rutina=="dgen"){
+        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=96&Itemid=2333', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
 	     	ref.addEventListener("loaderror", onOffline, false);
+    	}else if(rutina=="dcat"){
+    		var usuario = localStorage.usuario;
+			if (usuario != null && usuario != "" && usuario != false && usuario != undefined){
+	        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
+		     	ref.addEventListener("loaderror", onOffline, false);
+		    }else {
+		    	self.location.href="inicio.en.html";
+		    }
     	}else if(rutina=="send"){
 			self.location.href="sendorder.en.html";
     	}else if(rutina=="cont"){
@@ -303,9 +336,17 @@ function selector(rutina){
 		}else if(rutina=="web"){
         	var ref = window.open('http://www.wai-news.com', '_blank','location=yes');
 		    ref.addEventListener("loaderror", onOffline, false);
-    	}else if(rutina=="docu"){
-        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=category&layout=blog&id=89&Itemid=2121', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
+    	}else if(rutina=="dgen"){
+        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=96&Itemid=2333', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
 	     	ref.addEventListener("loaderror", onOffline, false);
+    	}else if(rutina=="dcat"){
+    		var usuario = localStorage.usuario;
+			if (usuario != null && usuario != "" && usuario != false && usuario != undefined){
+	        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
+		     	ref.addEventListener("loaderror", onOffline, false);
+		    }else {
+		    	self.location.href="inicio.en.html";
+		    }
     	}else if(rutina=="send"){
 			self.location.href="sendorder.es.html";
     	}else if(rutina=="cont"){
@@ -332,9 +373,17 @@ function selector(rutina){
 		}else if(rutina=="web"){
         	var ref = window.open('http://www.wai-news.com', '_blank','location=yes');
 		    ref.addEventListener("loaderror", onOffline, false);
-    	}else if(rutina=="docu"){
-        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=category&layout=blog&id=89&Itemid=2121', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
+    	}else if(rutina=="dgen"){
+        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=96&Itemid=2333', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
 	     	ref.addEventListener("loaderror", onOffline, false);
+    	}else if(rutina=="dcat"){
+    		var usuario = localStorage.usuario;
+			if (usuario != null && usuario != "" && usuario != false && usuario != undefined){
+	        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
+		     	ref.addEventListener("loaderror", onOffline, false);
+		    }else {
+		    	self.location.href="inicio.en.html";
+		    }
     	}else if(rutina=="send"){
 			self.location.href="sendorder.pt.html";
     	}else if(rutina=="cont"){
