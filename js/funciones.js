@@ -302,17 +302,17 @@ function selector(rutina){
     	}else if(rutina=="inic"){
 			self.location.href="inicio.en.html";
 		}else if(rutina=="news"){
-			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'location=no');
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'EnableViewPortScale=yes,location=no');
 			ref.addEventListener("loaderror", onOffline, false);
 		}else if(rutina=="web"){
-        	var ref = window.open('http://www.wai-news.com', '_blank','location=no');
+        	var ref = window.open('http://www.wai-news.com', '_blank','EnableViewPortScale=yes,location=no');
 		    ref.addEventListener("loaderror", onOffline, false);
     	}else if(rutina=="dgen"){
-        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=96&Itemid=2333', '_blank', 'location=no');
+        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=96&Itemid=2333', '_blank', 'EnableViewPortScale=yes,location=no');
 	     	ref.addEventListener("loaderror", onOffline, false);
     	}else if(rutina=="dcat"){
 			if (val_usuario()){
-	        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'location=no');
+	        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'EnableViewPortScale=yes,location=no');
 		     	ref.addEventListener("loaderror", onOffline, false);
 		    }else {
 		    	showAlert("You need to sign in to use this option","Information");
@@ -324,10 +324,10 @@ function selector(rutina){
     	}else if(rutina=="shar"){
 			self.location.href="share.en.html";
     	}else if(rutina=="newp"){
-	        var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=category&layout=blog&id=88&Itemid=435', '_blank', 'location=no');
+	        var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=category&layout=blog&id=88&Itemid=435', '_blank', 'EnableViewPortScale=yes,location=no');
 		    ref.addEventListener("loaderror", onOffline, false);	
     	}else if(rutina=="pri"){
-	        var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=article&id=190&Itemid=435', '_blank', 'location=no');
+	        var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=article&id=190&Itemid=435', '_blank', 'EnableViewPortScale=yes,location=no');
 		    ref.addEventListener("loaderror", onOffline, false);	
     	}else if(rutina=="regi"){
 			self.location.href="registro.en.html";
