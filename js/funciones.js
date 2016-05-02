@@ -344,10 +344,10 @@ function selector(rutina){
 			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'location=no');
 			ref.addEventListener("loaderror", onOffline, false);
 		}else if(rutina=="eje4"){
-			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'menubar=yes');
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'location=no,menubar=yes');
 			ref.addEventListener("loaderror", onOffline, false);
 		}else if(rutina=="eje5"){
-			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'menubar=no');
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'location=no,menubar=no');
 			ref.addEventListener("loaderror", onOffline, false);
 		}
 
@@ -389,19 +389,22 @@ function selector(rutina){
 		
 
 		}else if(rutina=="eje1"){
-			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'EnableViewPortScale=yes,location=no,menubar=no,status=no,titlebar=no,toolbar=no');
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'location=no,status=yes');
 			ref.addEventListener("loaderror", onOffline, false);
 		}else if(rutina=="eje2"){
-			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'status=yes');
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'location=no,status=no');
 			ref.addEventListener("loaderror", onOffline, false);
 		}else if(rutina=="eje3"){
-			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'status=no');
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'location=no,titlebar=yes');
 			ref.addEventListener("loaderror", onOffline, false);
 		}else if(rutina=="eje4"){
-			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'titlebar=yes');
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'location=no,titlebar=no');
 			ref.addEventListener("loaderror", onOffline, false);
 		}else if(rutina=="eje5"){
-			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'titlebar=no');
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'location=no,toolbar=yes');
+			ref.addEventListener("loaderror", onOffline, false);
+		}else if(rutina=="eje6"){
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'location=no,toolbar=no');
 			ref.addEventListener("loaderror", onOffline, false);
 		}
 
