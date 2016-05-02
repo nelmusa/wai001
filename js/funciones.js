@@ -308,14 +308,14 @@ function selector(rutina){
         	var ref = window.open('http://www.wai-news.com', '_blank','location=yes');
 		    ref.addEventListener("loaderror", onOffline, false);
     	}else if(rutina=="dgen"){
-        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=96&Itemid=2333', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
+        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=96&Itemid=2333', '_blank', 'EnableViewPortScale=yes,location=no,menubar=no,status=no,titlebar=no,toolbar=no');
 	     	ref.addEventListener("loaderror", onOffline, false);
     	}else if(rutina=="dcat"){
 			if (val_usuario()){
 	        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
 		     	ref.addEventListener("loaderror", onOffline, false);
 		    }else {
-		    	showAlert("You need to connect to use this option","Information");
+		    	showAlert("You need to sign in to use this option","Information");
 		    }
     	}else if(rutina=="send"){
 			self.location.href="sendorder.en.html";
@@ -331,7 +331,26 @@ function selector(rutina){
 		    ref.addEventListener("loaderror", onOffline, false);	
     	}else if(rutina=="regi"){
 			self.location.href="registro.en.html";
+
+
+
+		}else if(rutina=="eje1"){
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank');
+			ref.addEventListener("loaderror", onOffline, false);
+		}else if(rutina=="eje2"){
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'location=yes');
+			ref.addEventListener("loaderror", onOffline, false);
+		}else if(rutina=="eje3"){
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'location=no');
+			ref.addEventListener("loaderror", onOffline, false);
+		}else if(rutina=="eje4"){
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'menubar=yes');
+			ref.addEventListener("loaderror", onOffline, false);
+		}else if(rutina=="eje5"){
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'menubar=no');
+			ref.addEventListener("loaderror", onOffline, false);
 		}
+
     }else if(idioma == 'es'){
 		if(rutina=='inde'){
 			self.location.href="index.es.html";
@@ -367,7 +386,26 @@ function selector(rutina){
 		    ref.addEventListener("loaderror", onOffline, false);	
     	}else if(rutina=="regi"){
 			self.location.href="registro.es.html";
+		
+
+		}else if(rutina=="eje1"){
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'EnableViewPortScale=yes,location=no,menubar=no,status=no,titlebar=no,toolbar=no');
+			ref.addEventListener("loaderror", onOffline, false);
+		}else if(rutina=="eje2"){
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'status=yes');
+			ref.addEventListener("loaderror", onOffline, false);
+		}else if(rutina=="eje3"){
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'status=no');
+			ref.addEventListener("loaderror", onOffline, false);
+		}else if(rutina=="eje4"){
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'titlebar=yes');
+			ref.addEventListener("loaderror", onOffline, false);
+		}else if(rutina=="eje5"){
+			var ref = window.open('http://www.wai-news.com/news-en.html', '_blank', 'titlebar=no');
+			ref.addEventListener("loaderror", onOffline, false);
 		}
+
+
     }else if(idioma == 'pt'){
 		if(rutina=='inde'){
 			self.location.href="index.pt.html";
@@ -387,7 +425,7 @@ function selector(rutina){
 	        	var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=categories&id=95&Itemid=2332', '_blank', 'EnableViewPortScale=yes, location=no, menubar=no, status=no, titlebar=no, toolbar=no');
 		     	ref.addEventListener("loaderror", onOffline, false);
 		    }else {
-		    	showAlert("É necessário ligar para usar esta opção","Informação");
+		    	showAlert("É necessário conectar para usar esta opção","Informação");
 		    }
     	}else if(rutina=="send"){
 			self.location.href="sendorder.pt.html";
