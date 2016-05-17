@@ -7,6 +7,7 @@
 	<title>Main Menu</title>
 
 	<link rel="stylesheet" type="text/css" media="all" href="css/index.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/wai.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scale=no, maximum-scale=1" />
 
@@ -33,47 +34,75 @@
 	<div id="wrapper">
 		<ul class="menu">
 			<li class="item1">
-				<!-- <a href="news.pt.html">Publicações WAI<span>0</span></a> -->
-				<a href="javascript:selector('news');">Publicações WAI</a>
+				<a href="javascript:selector('news');">
+					<i class="icon-news"></i>
+					Publicações WAI
+				</a>
 			</li>
 			<li class="item2">
-				<a id="Web" href="javascript:selector('web');">WAI Web Site</a>
+				<a id="Web" href="javascript:selector('web');">
+					<i class="icon-web"></i>
+					WAI Web Site
+				</a>
 			</li>
-			<!-- <li class="item3"> -->
-				<!-- <a href="documents.pt.html">Arquivos<span>0</span></a> -->
-				<!-- <a href="javascript:selector('docu');">Arquivos</a> -->
-			<!-- </li> -->
 			<li class="item3">
-				<a href="#">Arquivos<mas>+</mas></a>
+				<a href="#">
+					<i class="icon-document"></i>
+					Arquivos
+					<mas>+</mas>
+				</a>
 				<ul>
 					<li class="subitem1"><a href="javascript:selector('dgen');">Panfletos</a></li>
 					<li class="subitem2"><a href="javascript:selector('dcat');">Catálogos</a></li>
 				</ul>
 			</li>
 			<li class="item4">
-				<a href="#">Acesso Ao Cliente<mas>+</mas></a>
+				<a href="#">
+					<i class="icon-customer"></i>
+					Acesso Ao Cliente
+					<mas>+</mas>
+				</a>
 				<ul>
 					<li class="subitem1"><a href="javascript:selector('send');">Enviar Ordem</a></li>
 					<li class="subitem2"><a href="javascript:selector('cont');">Contatenos</a></li>
 				</ul>
 			</li>
-			<li class="item5"><a href="javascript:selector('shar');">Compartilhe</a>
-			</li>
-			<li class="item6"><a href="#">Idioma<mas>+</mas></a>
-				<ul>
-					<li class="subitem1"><a href="javascript:cambiar_idioma('en');">Inglês</a></li>
-					<li class="subitem2"><a href="javascript:cambiar_idioma('es');">Espanhol</a></li>
-				</ul>
+			<li class="item5">
+				<a href="javascript:selector('shar');">
+					<i class="icon-shareit"></i>
+					Compartilhe
+				</a>
 			</li>
 			<li class="item7">
-				<a href="javascript:selector('newp');">Novos produtos</a>
+				<a href="javascript:selector('newp');">
+					<i class="icon-new"></i>
+					Novos produtos
+				</a>
 			</li>
 			<li class="item8">
-				<a href="javascript:noti_mail();">Feedback</a>
+				<a href="javascript:noti_mail();">
+					<i class="icon-feedback"></i>
+					Feedback
+				</a>
 			</li>
-			<li class="item9" id="inout">
-				<a id="inout1" href="javascript:signinout();">Conectar</a>
+			<li class="item9" id="inout90">
+				<a href="javascript:signinout();">
+					<i class="icon-signin"></i>
+					Conectar
+				</a>
 			</li>
+			<li class="item9" id="inout91">
+				<a href="javascript:signinout();">
+					<i class="icon-signout"></i>
+					Desligar
+				</a>
+			</li>
+			<li class="item10">
+				<a href="javascript:selector('sett');">
+					<i class="icon-config"></i>
+					Configuração
+				</a>
+			</li>		
 		</ul>
 	</div>
 

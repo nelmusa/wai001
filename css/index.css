@@ -43,6 +43,16 @@ ul ul {
     /*border: 1px solid red;*/
 }
 
+#sett {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 1%;
+    text-align: center;
+    font-size: 100%;
+    color: #071F5D;
+    /*border: 1px solid red;*/
+}
+
 #policy {
     font-size: 45%;
     width: 30%;
@@ -245,3 +255,8 @@ ul ul {
 #inout90, #inout91 {
     display: none; 
 }
+
+#item21 {
+    display: none;
+}
+

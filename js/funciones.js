@@ -53,6 +53,17 @@ function user_ini () {
 		x.style.display = 'block'; 
 	}
 
+	//=============================================== 
+
+	var idnotify = localStorage.idnotify;
+
+	if (idnotify != null && idnotify != "" && idnotify != false && idnotify != undefined){
+		var x = document.getElementById('item21');
+		x.style.display = 'block'; 
+	}
+
+	//=============================================== 
+
 	new_span();
 }
 
@@ -215,6 +226,49 @@ function noti_mail_f (buttonIndex) {
 
 //===================================================================
 
+function conf_notify(){
+	var idioma = localStorage.idioma;
+	if (idioma == 'es'){
+		var msg001 = [
+			 	      '¿Recibir notificaciones?',
+				      'Mensajes',
+				      'Si',
+				      'No'
+				     ];
+    } else if (idioma == 'pt'){
+    	var msg001 = [
+    		          'Receber notificações?',
+    		          'Mensagens',
+    		          'Se',
+    		          'Não'
+    		         ];
+    } else {
+        var msg001 = [
+                      'Receive notifications?',
+                      'Messages',
+                      'Yes',
+                      'No'
+                     ];
+    }
+
+    navigator.notification.confirm(
+        msg001[0],     			// message
+        conf_notify_f,          // callback
+        msg001[1],      		// title
+        [msg001[2],msg001[3]]  	// buttonName
+    );
+}
+
+function conf_notify_f (buttonIndex) {
+    if(buttonIndex == 1){
+		localStorage.notify = "si";
+	} else {
+		localStorage.notify = "no";
+	}
+} 
+
+//===================================================================
+
 function closeApp(){
 	var idioma = localStorage.idioma;
 	if (idioma == 'es'){
@@ -317,6 +371,11 @@ function selector(rutina){
 		    ref.addEventListener("loaderror", onOffline, false);	
     	}else if(rutina=="regi"){
 			self.location.href="registro.en.html";
+    	}else if(rutina=="sett"){
+			self.location.href="config.en.html";
+    	}else if(rutina=="cali"){
+	        var ref = window.open('https://itunes.apple.com/cr/app/wai-app/id1087241702?mt=8', '_blank', 'EnableViewPortScale=yes,location=no');
+		    ref.addEventListener("loaderror", onOffline, false);
 		}
     }else if(idioma == 'es'){
 		if(rutina=='inde'){
@@ -353,6 +412,11 @@ function selector(rutina){
 		    ref.addEventListener("loaderror", onOffline, false);	
     	}else if(rutina=="regi"){
 			self.location.href="registro.es.html";
+    	}else if(rutina=="sett"){
+			self.location.href="config.es.html";
+    	}else if(rutina=="cali"){
+	        var ref = window.open('https://itunes.apple.com/cr/app/wai-app/id1087241702?mt=8', '_blank', 'EnableViewPortScale=yes,location=no');
+		    ref.addEventListener("loaderror", onOffline, false);
 		}
     }else if(idioma == 'pt'){
 		if(rutina=='inde'){
@@ -389,6 +453,11 @@ function selector(rutina){
 		    ref.addEventListener("loaderror", onOffline, false);	
     	}else if(rutina=="regi"){
 			self.location.href="registro.pt.html";
+    	}else if(rutina=="sett"){
+			self.location.href="config.pt.html";
+    	}else if(rutina=="cali"){
+	        var ref = window.open('https://itunes.apple.com/cr/app/wai-app/id1087241702?mt=8', '_blank', 'EnableViewPortScale=yes,location=no');
+		    ref.addEventListener("loaderror", onOffline, false);
 		}
     }
 }

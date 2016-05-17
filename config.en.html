@@ -4,10 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="format-detection" content="telephone=no" />
 	<meta name="msapplication-tap-highlight" content="no" />
-	<title>Main Menu</title>
+	<title>Settings</title>
 
 	<link rel="stylesheet" type="text/css" media="all" href="css/index.css">
-	<link rel="stylesheet" type="text/css" media="all" href="css/config.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/wai.css">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scale=no, maximum-scale=1" />
 
@@ -30,52 +30,37 @@
 	<div align="center">
 		<img src="img/WAI Logo.png" style="width: 20%; max-width: 150px; height: auto">
 	</div>
-	<h1 id="usuario"> </h1>
+	<h1 id="sett">Settings</h1>
 	<div id="wrapper">
 		<ul class="menu">
-			<li class="item1">
-				<a>WAI News</a>
-
-			    <label class="switch switch-left-right">
-			    	<input class="switch-input" type="checkbox" />
-			    	<span class="switch-label" data-on="On" data-off="Off"></span> 
-			    	<span class="switch-handle"></span> 
-			    </label>
-
+			<li id="item21" class="item21">
+				<a id="notify" href="javascript:conf_notify();">
+					<i class="icon-notify"></i>
+					Notifications
+				</a>
 			</li>
-			<li class="item2">
-				<a id="Web" href="javascript:selector('web');">WAI Web Site</a>
+			<li class="item22">
+				<a id="calific" href="javascript:selector('cali');">
+					<i class="icon-calific"></i>
+					Rate App
+				</a>
 			</li>
-			<!-- <li class="item3"> -->
-				<!-- <a id="doc" href="javascript:selector('docu');">Documents</a> -->
-			<!-- </li> -->
-			<li class="item3">
-				<a href="#">Documents<mas>+</mas></a>
-				<ul>
-					<li class="subitem1"><a href="javascript:selector('dgen');">Flyers</a></li>
-					<li class="subitem2"><a href="javascript:selector('dcat');">Catalogs</a></li>
-				</ul>
-			</li>
-			<li class="item4">
-				<a href="#">Customer Access<mas>+</mas></a>
-				<ul>
-					<li class="subitem1"><a href="javascript:selector('send');">Send Order</a></li>
-					<li class="subitem2"><a href="javascript:selector('cont');">Contact Us</a></li>
-				</ul>
-			</li>
-			<li class="item5"><a href="javascript:selector('shar');">Share It</a></li>
-			<li class="item6"><a href="#">Languaje<mas>+</mas></a>
+			<li class="item23">
+				<a href="#">
+					<i class="icon-language"></i>
+					Languaje
+					<mas>+</mas>
+				</a>
 				<ul>
 					<li class="subitem1"><a href="javascript:cambiar_idioma('es');">Spanish</a></li>
 					<li class="subitem2"><a href="javascript:cambiar_idioma('pt');">Portuguese</a></li>
 				</ul>
 			</li>
-			<li class="item7"><a href="javascript:selector('newp');">New Products</a></li>
-			<li class="item8">
-				<a href="javascript:noti_mail();">Feedback</a>
-			</li>
-			<li class="item9" id="inout">
-				<a id="inout1" href="javascript:signinout();">Sign In</a>
+			<li class="item24">
+				<a href="javascript:selector('inde');">
+					<i class="icon-return"></i>
+					Return
+				</a>
 			</li>
 		</ul>
 	</div>
@@ -106,6 +91,7 @@
 				}
 			});
 		});
+	
 	</script>
 
 	<script type="text/javascript" src="js/index.js"></script>
