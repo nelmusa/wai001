@@ -30,11 +30,11 @@ function cambiar_idioma(idioma)
 {
 	localStorage.idioma = idioma;
 	if (idioma == "es") {
-		self.location.href="index.es.html";
+		self.location.href="config.es.html";
 	} else if (idioma == "pt") {
-		self.location.href="index.pt.html";
+		self.location.href="config.pt.html";
 	} else {
-		self.location.href="index.en.html";
+		self.location.href="config.en.html";
 	}
 }
 

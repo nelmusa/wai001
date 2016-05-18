@@ -260,3 +260,28 @@ ul ul {
     display: none;
 }
 
+/*=====================================================*/
+
+.animated {
+  animation-duration: .5s;
+  /*animation-fill-mode: both;*/
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3);
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+.fadein {
+  animation-name: fadein;
+}
+
+
+
+
