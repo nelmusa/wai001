@@ -65,7 +65,7 @@ ul ul {
     /*text-align: right;*/
 }
 
-#wrapper {  
+#wrapper {
     width: 80%;
     margin-left: 10%;
     margin-top: 1%;
@@ -97,12 +97,12 @@ ul ul {
 }
 
 /*iconos*/
-.menu li > a > i:before { 
-    color: #071F5D; 
+.menu li > a > i:before {
+    color: #071F5D;
 }
-.menu li:hover > a > i:before,  
-.menu li:target > a > i:before { 
-    color: white; 
+.menu li:hover > a > i:before,
+.menu li:target > a > i:before {
+    color: white;
 }
 
 /*sub-menu desplegable*/
@@ -126,9 +126,9 @@ ul ul {
 .menu ul li:last-child a {
     border-bottom: 1px solid #071F5D;
 }
-.menu > li > a:hover, 
+.menu > li > a:hover,
 .menu > li > a.active {
-    background-color: #071F5D;  
+    background-color: #071F5D;
     color: white;
     background-repeat: no-repeat;
 }
@@ -179,7 +179,7 @@ ul ul {
     display: inline-block;
     position: absolute;
     right: .5rem;
-    top: 19%; 
+    top: 19%;
     background: #C42625;
     padding: 0rem .6rem .0rem .6rem;
     color: white;
@@ -188,13 +188,13 @@ ul ul {
     text-shadow: 0px 1px 0px rgba(0,0,0,.5);
 }
 
-.menu > li > a:hover span, 
+.menu > li > a:hover span,
 .menu > li a.active span {
     background: #C42625;
 }
 
 .menu ul > li > a span {
-    font-size: 0.857em; 
+    font-size: 0.857em;
     display: inline-block;
     position: absolute;
     right: .5em;
@@ -204,7 +204,7 @@ ul ul {
     line-height: 160%;
     height: 1em;
     padding: .4em .7em;
-    margin: -.9em 0 0 0; 
+    margin: -.9em 0 0 0;
     color: #878d95;
     text-indent: 0;
     text-align: center;
@@ -224,7 +224,7 @@ ul ul {
     left: -2rem;
     content: '▶';
 }
- 
+
 .menu > li > ul li:hover a,
 .menu > li > ul li:hover a span,
 .menu > li > ul li:hover a:before {
@@ -253,11 +253,11 @@ ul ul {
 }
 
 #inout90, #inout91 {
-    display: none; 
+    display: none;
 }
 
 #item21 {
-    display: none;
+    display: block;
 }
 
 /*=====================================================*/
