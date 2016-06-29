@@ -46,6 +46,7 @@ var app = {
         var idnotify = localStorage.idnotify;
         alert(idnotify);
         if (idnotify == null || idnotify == "" || notify == undefined){
+            var pushNotification = window.plugins.pushNotification;
             pushNotification.register(this.successHandler, this.errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"});
         }
         console.log('Received Event: ' + id);
@@ -61,6 +62,7 @@ var app = {
         }
     },
     onNotificationAPN: function(event) {
+        var pushNotification = window.plugins.pushNotification;
         alert(event.body);
         try {
             event.body = JSON.parse(event.body);
@@ -75,7 +77,6 @@ var app = {
                 snd.play();
             }
         }catch(err) {
-
         }
     }
 };
