@@ -47,22 +47,22 @@ function user_ini () {
 		tit.childNodes[0].nodeValue = usuario;
 
 		var x = document.getElementById('inout91');
-		x.style.display = 'block'; 
+		x.style.display = 'block';
 	} else {
 		var x = document.getElementById('inout90');
-		x.style.display = 'block'; 
+		x.style.display = 'block';
 	}
 
-	//=============================================== 
+	//===============================================
 
 	var idnotify = localStorage.idnotify;
 
 	if (idnotify != null && idnotify != "" && idnotify != false && idnotify != undefined){
 		var x = document.getElementById('item21');
-		x.style.display = 'block'; 
+		x.style.display = 'block';
 	}
 
-	//=============================================== 
+	//===============================================
 
 	new_span();
 }
@@ -105,13 +105,13 @@ function signinout(){
 		self.location.href="index.html";
 	} else {
 		var idioma = localStorage.idioma;
-	
+
 		if (idioma != null && idioma != "" && idioma != false && idioma != undefined){
 		} else {
 			idioma = "en";
 			localStorage.idioma = "en";
 		}
-	
+
 		if (idioma == "es") {
 			self.location.href="inicio.es.html";
 		} else if (idioma == "pt") {
@@ -213,8 +213,8 @@ function noti_mail_f (buttonIndex) {
 	    msg002[1] += "Operating System: " + device.platform + " " + device.version + "\n";
 	    msg002[1] += "App version: " + localStorage.version;
 
-	  	// 'Device Cordova: ' + device.cordova + '<br />' + 
-	  	// 'Device UUID: '    + device.uuid    + '<br />' + 
+	  	// 'Device Cordova: ' + device.cordova + '<br />' +
+	  	// 'Device UUID: '    + device.uuid    + '<br />' +
 
 	    var link = "mailto:info@wai-news.com?"
 	             + "cc=" + localStorage.email
@@ -222,7 +222,7 @@ function noti_mail_f (buttonIndex) {
 	             + "&body=" + encodeURI(msg002[1]);
 	    window.location.href = link;
 	}
-} 
+}
 
 //===================================================================
 
@@ -260,12 +260,14 @@ function conf_notify(){
 }
 
 function conf_notify_f (buttonIndex) {
-    if(buttonIndex == 1){
+  if(buttonIndex == 1){
+    $.get({ url: "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + localStorage.idnotify + "&appcode=nms.wai.001&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1" });
 		localStorage.notify = "si";
 	} else {
+    $.get({ url: "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + localStorage.idnotify + "&appcode=fake_app&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1" });
 		localStorage.notify = "no";
 	}
-} 
+}
 
 //===================================================================
 
@@ -365,10 +367,10 @@ function selector(rutina){
 			self.location.href="share.en.html";
     	}else if(rutina=="newp"){
 	        var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=category&layout=blog&id=88&Itemid=435', '_blank', 'EnableViewPortScale=yes,location=no');
-		    ref.addEventListener("loaderror", onOffline, false);	
+		    ref.addEventListener("loaderror", onOffline, false);
     	}else if(rutina=="pri"){
 	        var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=article&id=190&Itemid=435', '_blank', 'EnableViewPortScale=yes,location=no');
-		    ref.addEventListener("loaderror", onOffline, false);	
+		    ref.addEventListener("loaderror", onOffline, false);
     	}else if(rutina=="regi"){
 			self.location.href="registro.en.html";
     	}else if(rutina=="sett"){
@@ -406,10 +408,10 @@ function selector(rutina){
 			self.location.href="share.es.html";
     	}else if(rutina=="newp"){
 	        var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=category&layout=blog&id=88&Itemid=435', '_blank', 'EnableViewPortScale=yes,location=no');
-		    ref.addEventListener("loaderror", onOffline, false);	
+		    ref.addEventListener("loaderror", onOffline, false);
     	}else if(rutina=="pri"){
 	        var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=article&id=190&Itemid=435', '_blank', 'EnableViewPortScale=yes,location=no');
-		    ref.addEventListener("loaderror", onOffline, false);	
+		    ref.addEventListener("loaderror", onOffline, false);
     	}else if(rutina=="regi"){
 			self.location.href="registro.es.html";
     	}else if(rutina=="sett"){
@@ -447,10 +449,10 @@ function selector(rutina){
 			self.location.href="share.pt.html";
     	}else if(rutina=="newp"){
 	        var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=category&layout=blog&id=88&Itemid=435', '_blank', 'EnableViewPortScale=yes,location=no');
-		    ref.addEventListener("loaderror", onOffline, false);	
+		    ref.addEventListener("loaderror", onOffline, false);
     	}else if(rutina=="pri"){
 	        var ref = window.open('http://www.wai-news.com/index.php?option=com_content&view=article&id=190&Itemid=435', '_blank', 'EnableViewPortScale=yes,location=no');
-		    ref.addEventListener("loaderror", onOffline, false);	
+		    ref.addEventListener("loaderror", onOffline, false);
     	}else if(rutina=="regi"){
 			self.location.href="registro.pt.html";
     	}else if(rutina=="sett"){

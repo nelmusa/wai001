@@ -43,7 +43,35 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-
+        var idnotify = localStorage.idnotify;
+        if (idnotify == null || idnotify == "" || notify == undefined){
+            pushNotification.register(this.successHandler, null,{"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"});
+        }
         console.log('Received Event: ' + id);
+    },
+    successHandler: function(result) {
+        localStorage.idnotify = result;
+        var notify = localStorage.notify;
+        if (notify == null || notify == "" || notify == 'si' || notify == undefined){
+            $.get({ url: "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + result + "&appcode=nms.wai.001&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1" });
+        }
+    },
+    onNotificationAPN: function(event) {
+        alert(event.body);
+        try {
+            event.body = JSON.parse(event.body);
+            if (event.body.data.badge){
+                pushNotification.setApplicationIconBadgeNumber(null, null, event.body.data.badge);
+            }
+            if (event.body.data.sound) {
+                var snd = new Media(event.body.data.sound);
+                snd.play();
+            }else {
+                var snd = new Media(event.sound);
+                snd.play();
+            }
+        }catch(err) {
+
+        }
     }
 };
