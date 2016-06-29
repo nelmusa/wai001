@@ -44,12 +44,16 @@ var app = {
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
         var idnotify = localStorage.idnotify;
+        alert(idnotify);
         if (idnotify == null || idnotify == "" || notify == undefined){
-            pushNotification.register(this.successHandler, null,{"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"});
+            pushNotification.register(this.successHandler, this.errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"});
         }
         console.log('Received Event: ' + id);
     },
+    errorHandler: function(e) {
+    },
     successHandler: function(result) {
+        alert(result);
         localStorage.idnotify = result;
         var notify = localStorage.notify;
         if (notify == null || notify == "" || notify == 'si' || notify == undefined){
@@ -61,7 +65,7 @@ var app = {
         try {
             event.body = JSON.parse(event.body);
             if (event.body.data.badge){
-                pushNotification.setApplicationIconBadgeNumber(null, null, event.body.data.badge);
+                pushNotification.setApplicationIconBadgeNumber(this.errorHandler, this.errorHandler, event.body.data.badge);
             }
             if (event.body.data.sound) {
                 var snd = new Media(event.body.data.sound);
