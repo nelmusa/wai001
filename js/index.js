@@ -43,15 +43,20 @@ var app = {
 
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
+        try {
         var idnotify = localStorage.idnotify;
         alert(idnotify);
         if (idnotify == null || idnotify == "" || notify == undefined){
             var pushNotification = window.plugins.pushNotification;
             pushNotification.register(this.successHandler, this.errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"});
         }
+        }catch(err) {
+            alert(err);
+        }
         console.log('Received Event: ' + id);
     },
     errorHandler: function(e) {
+        alert(e);
     },
     successHandler: function(result) {
         alert(result);
@@ -77,6 +82,7 @@ var app = {
                 snd.play();
             }
         }catch(err) {
+            alert(err);
         }
     }
 };
