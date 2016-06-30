@@ -68,7 +68,15 @@ var app = {
             alert('notify');
             if (notify == null || notify == "" || notify == 'si' || notify == undefined){
                 alert('nope');
-                $.get({ url: "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + result + "&appcode=nms.wai.001&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1" });
+                $.get({ url: "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + result + "&appcode=nms.wai.001&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1",
+                    success    : function(response) {
+                    alert(JSON.stringify(response));
+                    alert('Works!');
+                },
+                error      : function() {
+                    //console.error("error");
+                    alert('Now working!');
+                } });
             }
         }catch(err) {
             alert(err);
