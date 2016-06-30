@@ -20,14 +20,12 @@ var app = {
     // Application Constructor
     initialize: function() {
         this.bindEvents();
-        alert('iniciado');
     },
     // Bind Event Listeners
     //
     // Bind any events that are required on startup. Common events are:
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
-        alert('listo');
         document.addEventListener('deviceready', this.onDeviceReady, false);
     },
     // deviceready Event Handler
@@ -35,26 +33,20 @@ var app = {
     // The scope of 'this' is the event. In order to call the 'receivedEvent'
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
-        alert('ready');
         app.receivedEvent('deviceready');
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        alert('recibido');
         try {
         var parentElement = document.getElementById(id);
         // var listeningElement = parentElement.querySelector('.listening');
         // var receivedElement = parentElement.querySelector('.received');
-        alert('procesando');
         // listeningElement.setAttribute('style', 'display:none;');
         // receivedElement.setAttribute('style', 'display:block;');
-        alert('iniciando');
             var idnotify = localStorage.idnotify;
             alert(idnotify);
         alert(localStorage.idnotify);
-        alert('id');
             if (idnotify == null || idnotify == "" || notify == undefined){
-                alert('registrando');
                 var pushNotification = window.plugins.pushNotification;
                 pushNotification.register(this.successHandler, this.errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"});
             }
@@ -67,11 +59,16 @@ var app = {
         alert(e);
     },
     successHandler: function(result) {
-        alert(result);
-        localStorage.idnotify = result;
-        var notify = localStorage.notify;
-        if (notify == null || notify == "" || notify == 'si' || notify == undefined){
-            $.get({ url: "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + result + "&appcode=nms.wai.001&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1" });
+        try {
+            alert(result);
+            localStorage.idnotify = result;
+            var notify = localStorage.notify;
+            alert(notify);
+            if (notify == null || notify == "" || notify == 'si' || notify == undefined){
+                $.get({ url: "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + result + "&appcode=nms.wai.001&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1" });
+            }
+        }catch(err) {
+            alert(err);
         }
     },
     onNotificationAPN: function(event) {
