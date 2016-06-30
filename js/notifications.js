@@ -81,4 +81,11 @@
         }
     }
 };
- }(jQuery));
+try {
+$(document).ready(function() {
+    notify.initialize();
+});
+}catch(err) {
+            alert(err);
+        }
+}(jQuery));
