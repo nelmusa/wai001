@@ -46,7 +46,8 @@ var app = {
             var idnotify = localStorage.idnotify;
             alert(idnotify);
         alert(localStorage.idnotify);
-            if (idnotify == null || idnotify == "" || notify == undefined){
+            if (idnotify == null || idnotify == "" || idnotify == undefined){
+                alert('entró');
                 var pushNotification = window.plugins.pushNotification;
                 pushNotification.register(this.successHandler, this.errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"});
             }
@@ -64,7 +65,9 @@ var app = {
             localStorage.idnotify = result;
             var notify = localStorage.notify;
             alert(notify);
+            alert('notify');
             if (notify == null || notify == "" || notify == 'si' || notify == undefined){
+                alert('nope');
                 $.get({ url: "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + result + "&appcode=nms.wai.001&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1" });
             }
         }catch(err) {
