@@ -12,8 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scale=no, maximum-scale=1" />
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-	<script type="text/javascript" charset="utf-8" src="js/funciones.js"></script> 
-
+	<script type="text/javascript" charset="utf-8" src="js/funciones.js"></script>
+	<script type="text/javascript" charset="utf-8" src="js/notifications.js"></script>
     <script type="text/javascript" charset="utf-8" src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script>
 
 	<script type="text/javascript" charset="utf-8" src="phonegap.js"></script>
@@ -84,13 +84,13 @@
 					<i class="icon-feedback"></i>
 					Feedback
 				</a>
-			</li>			
+			</li>
 			<li class="item9" id="inout90">
 				<a href="javascript:signinout();">
 					<i class="icon-signin"></i>
 					Sign In
 				</a>
-			</li>			
+			</li>
 			<li class="item9" id="inout91">
 				<a href="javascript:signinout();">
 					<i class="icon-signout"></i>
@@ -132,13 +132,13 @@
 				}
 			});
 		});
-	
+
 	</script>
 
 	<script type="text/javascript" src="js/index.js"></script>
 	<script type="text/javascript">
 		app.initialize();
+		notify.initialize();
 	</script>
-
 </body>
 </html>
