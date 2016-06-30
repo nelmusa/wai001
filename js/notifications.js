@@ -46,18 +46,10 @@
             alert('notify');
             if (notification == null || notification == "" || notification == 'si' || notification == undefined){
               alert('sending action');
-              $.jsonp({ url: "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + result + "&appcode=nms.wai.001&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1",
-                callbackParameter: 'callback',
-                timeout: 25000,
-                success    : function(response) {
-                    //console.error(JSON.stringify(response));
-                    alert('Works!');
-                },
-                error      : function() {
-                    //console.error("error");
-                    alert('Now working!');
-                }
-              });
+              var request = new XMLHttpRequest();
+              request.open("GET", "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + result + "&appcode=nms.wai.001&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1",
+              true);
+              request.send();
             }
         }catch(err) {
             alert(err);
