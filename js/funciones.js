@@ -48,10 +48,14 @@ function user_ini() {
 		tit.childNodes[0].nodeValue = usuario;
 
 		var x = document.getElementById('inout91');
-		x.style.display = 'block';
+    if (x != undefined && x != null){
+		  x.style.display = 'block';
+    }
 	} else {
 		var x = document.getElementById('inout90');
-		x.style.display = 'block';
+		if (x != undefined && x != null){
+      x.style.display = 'block';
+    }
 	}
 
 	//===============================================
