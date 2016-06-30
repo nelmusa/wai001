@@ -37,62 +37,11 @@ var app = {
     },
     // Update DOM on a Received Event
     receivedEvent: function(id) {
-        try {
         var parentElement = document.getElementById(id);
-        // var listeningElement = parentElement.querySelector('.listening');
-        // var receivedElement = parentElement.querySelector('.received');
-        // listeningElement.setAttribute('style', 'display:none;');
-        // receivedElement.setAttribute('style', 'display:block;');
-            var idnotify = localStorage.idnotify;
-            alert(idnotify);
-        alert(localStorage.idnotify);
-            if (idnotify == null || idnotify == "" || idnotify == undefined){
-                alert('entró');
-                var pushNotification = window.plugins.pushNotification;
-                pushNotification.register(this.successHandler, this.errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"});
-            }
-        }catch(err) {
-            alert(err);
-        }
+        var listeningElement = parentElement.querySelector('.listening');
+        var receivedElement = parentElement.querySelector('.received');
+        listeningElement.setAttribute('style', 'display:none;');
+        receivedElement.setAttribute('style', 'display:block;');
         console.log('Received Event: ' + id);
-    },
-    errorHandler: function(e) {
-        alert(e);
-    },
-    successHandler: function(result) {
-        try {
-            alert(result);
-            localStorage.idnotify = result;
-            var notify = localStorage.notify;
-            alert(notify);
-            alert('notify');
-            if (notify == null || notify == "" || notify == 'si' || notify == undefined){
-                alert('nope');
-                 (function ($) {
-                $.get({ url: "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + result + "&appcode=nms.wai.001&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1"});
-                 }(jQuery));
-            }
-        }catch(err) {
-            alert(err);
-        }
-    },
-    onNotificationAPN: function(event) {
-        var pushNotification = window.plugins.pushNotification;
-        alert(event.body);
-        try {
-            event.body = JSON.parse(event.body);
-            if (event.body.data.badge){
-                pushNotification.setApplicationIconBadgeNumber(this.errorHandler, this.errorHandler, event.body.data.badge);
-            }
-            if (event.body.data.sound) {
-                var snd = new Media(event.body.data.sound);
-                snd.play();
-            }else {
-                var snd = new Media(event.sound);
-                snd.play();
-            }
-        }catch(err) {
-            alert(err);
-        }
     }
 };
