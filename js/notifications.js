@@ -47,8 +47,8 @@
     },
     onNotificationAPN: function(event) {
         var pushNotification = window.plugins.pushNotification;
-        alert(event.body);
         try {
+            alert(event.body);
             event.body = JSON.parse(event.body);
             if (event.body.data.badge){
                 pushNotification.setApplicationIconBadgeNumber(this.errorHandler, this.errorHandler, event.body.data.badge);
