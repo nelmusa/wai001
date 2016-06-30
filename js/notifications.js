@@ -23,36 +23,26 @@
     receivedEvent: function(id) {
         try {
           var idnotify = localStorage.idnotify;
-          alert(idnotify);
-          alert(localStorage.idnotify);
           if (idnotify == null || idnotify == "" || idnotify == undefined){
-              alert('entró');
               var pushNotification = window.plugins.pushNotification;
               pushNotification.register(this.successHandler, this.errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"notify.onNotificationAPN"});
           }
         }catch(err) {
-            alert(err);
         }
     },
     errorHandler: function(e) {
-        alert(e);
     },
     successHandler: function(result) {
         try {
-            alert(result);
             localStorage.idnotify = result;
             var notification = localStorage.notify;
-            alert(notification);
-            alert('notify');
             if (notification == null || notification == "" || notification == 'si' || notification == undefined){
-              alert('sending action');
               var request = new XMLHttpRequest();
               request.open("GET", "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + result + "&appcode=nms.wai.001&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1",
               true);
               request.send();
             }
         }catch(err) {
-            alert(err);
         }
     },
     onNotificationAPN: function(event) {
@@ -70,14 +60,11 @@
                 var snd = new Media(event.sound);
                 snd.play();
             }
+            alert('push APN full event ' + JSON.stringify(event));
         }catch(err) {
             alert(err);
         }
     }
 };
-try {
-    notify.initialize();
-}catch(err) {
-            alert(err);
-        }
+  notify.initialize();
 }(jQuery));

@@ -38,7 +38,7 @@ function cambiar_idioma(idioma)
 	}
 }
 
-function user_ini () {
+function user_ini() {
 	var usuario = localStorage.usuario;
 
 	if (usuario != null && usuario != "" && usuario != false && usuario != undefined){
@@ -56,8 +56,9 @@ function user_ini () {
 	//===============================================
 
 	var idnotify = localStorage.idnotify;
-
+  alert(idnotify);
 	if (idnotify != null && idnotify != "" && idnotify != false && idnotify != undefined){
+    alert('entró');
 		var x = document.getElementById('item21');
 		x.style.display = 'block';
 	}
@@ -260,13 +261,19 @@ function conf_notify(){
 }
 
 function conf_notify_f (buttonIndex) {
+  var request = new XMLHttpRequest();
+
+
   if(buttonIndex == 1){
-    $.get({ url: "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + localStorage.idnotify + "&appcode=nms.wai.001&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1" });
-		localStorage.notify = "si";
+    request.open("GET", "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + result + "&appcode=nms.wai.001&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1",
+            true);
+    localStorage.notify = "si";
 	} else {
-    $.get({ url: "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + localStorage.idnotify + "&appcode=fake_app&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1" });
-		localStorage.notify = "no";
+    request.open("GET", "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + result + "&appcode=nms.wai.000&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1",
+            true);
+    localStorage.notify = "no";
 	}
+  request.send();
 }
 
 //===================================================================
