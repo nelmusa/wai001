@@ -41,19 +41,23 @@ var app = {
     // Update DOM on a Received Event
     receivedEvent: function(id) {
         alert('recibido');
+        try {
         var parentElement = document.getElementById(id);
         var listeningElement = parentElement.querySelector('.listening');
         var receivedElement = parentElement.querySelector('.received');
-
+        alert('procesando');
         listeningElement.setAttribute('style', 'display:none;');
         receivedElement.setAttribute('style', 'display:block;');
-        try {
-        var idnotify = localStorage.idnotify;
-        alert(idnotify);
-        if (idnotify == null || idnotify == "" || notify == undefined){
-            var pushNotification = window.plugins.pushNotification;
-            pushNotification.register(this.successHandler, this.errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"});
-        }
+        alert('iniciando');
+            var idnotify = localStorage.idnotify;
+            alert(idnotify);
+        alert(localStorage.idnotify);
+        alert('id');
+            if (idnotify == null || idnotify == "" || notify == undefined){
+                alert('registrando');
+                var pushNotification = window.plugins.pushNotification;
+                pushNotification.register(this.successHandler, this.errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"});
+            }
         }catch(err) {
             alert(err);
         }
