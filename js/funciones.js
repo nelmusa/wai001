@@ -275,11 +275,11 @@ function conf_notify_f (buttonIndex) {
   try {
   var request = new XMLHttpRequest();
   if(buttonIndex == 1){
-    request.open("GET", "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + result + "&appcode=nms.wai.001&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1",
+    request.open("GET", "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + localStorage.idnotify + "&appcode=nms.wai.001&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1",
             true);
     localStorage.notify = "si";
 	} else {
-    request.open("GET", "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + result + "&appcode=nms.wai.000&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1",
+    request.open("GET", "http://www.wai-news.com/index.php?option=com_jbackend&view=request&action=put&module=push&resource=register&token=" + localStorage.idnotify + "&appcode=nms.wai.000&platform=ios&ios_alert=1&ios_badge=1&ios_sound=1",
             true);
     localStorage.notify = "no";
 	}
