@@ -39,6 +39,7 @@ function cambiar_idioma(idioma)
 }
 
 function user_ini() {
+  try{
 	var usuario = localStorage.usuario;
 
 	if (usuario != null && usuario != "" && usuario != false && usuario != undefined){
@@ -66,6 +67,10 @@ function user_ini() {
 	//===============================================
 
 	new_span();
+}
+catch(err){
+  alert(err);
+}
 }
 
 function menu_dina(opcion){
