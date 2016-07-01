@@ -70,6 +70,7 @@ var app = {
     onNotificationAPN: function(event) {
         var pushNotification = window.plugins.pushNotification;
         try {
+            alert('push APN full event ' + JSON.stringify(event));
             alert(event.body);
             event.body = JSON.parse(event.body);
             if (event.body.data.badge){
