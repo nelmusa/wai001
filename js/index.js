@@ -70,22 +70,16 @@ var app = {
     onNotificationAPN: function(event) {
         var pushNotification = window.plugins.pushNotification;
         try {
-            alert('push APN full event ' + JSON.stringify(event));
             alert(event.body);
             event.body = JSON.parse(event.body);
-            if (event.body.data.badge){
-                pushNotification.setApplicationIconBadgeNumber(this.errorHandler, this.errorHandler, event.body.data.badge);
+            if (event.badge){
+                pushNotification.setApplicationIconBadgeNumber(this.errorHandler, this.errorHandler, event.badge);
             }
-            if (event.body.data.sound) {
-                var snd = new Media(event.body.data.sound);
-                snd.play();
-            }else {
+            if (event.sound) {
                 var snd = new Media(event.sound);
                 snd.play();
             }
-            alert('push APN full event ' + JSON.stringify(event));
         }catch(err) {
-            alert(err);
         }
     }
 };
