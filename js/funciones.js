@@ -61,9 +61,7 @@ function user_ini() {
 	//===============================================
 
 	var idnotify = localStorage.idnotify;
-  alert(idnotify);
 	if (idnotify != null && idnotify != "" && idnotify != false && idnotify != undefined){
-    alert('entró');
 		var x = document.getElementById('item21');
 		if (x != undefined && x != null){
       x.style.display = 'block';
