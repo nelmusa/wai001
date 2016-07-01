@@ -71,10 +71,9 @@ function user_ini() {
 	//===============================================
 
 	new_span();
-}
-catch(err){
-  alert(err);
-}
+  }
+  catch(err){
+  }
 }
 
 function menu_dina(opcion){
@@ -283,7 +282,6 @@ function conf_notify_f (buttonIndex) {
 	}
   request.send();
   }catch(err) {
-    alert(err);
   }
 }
 
