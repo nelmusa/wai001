@@ -25,7 +25,7 @@
           var idnotify = localStorage.idnotify;
           if (idnotify == null || idnotify == "" || idnotify == undefined){
               var pushNotification = window.plugins.pushNotification;
-              pushNotification.register(this.successHandler, this.errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"notify.onNotificationAPN"});
+              pushNotification.register(this.successHandler, this.errorHandler,{"badge":"true","sound":"true","alert":"true","ecb":"app.onNotificationAPN"});
           }
         }catch(err) {
         }
@@ -43,26 +43,6 @@
               request.send();
             }
         }catch(err) {
-        }
-    },
-    onNotificationAPN: function(event) {
-        var pushNotification = window.plugins.pushNotification;
-        try {
-            alert(event.body);
-            event.body = JSON.parse(event.body);
-            if (event.body.data.badge){
-                pushNotification.setApplicationIconBadgeNumber(this.errorHandler, this.errorHandler, event.body.data.badge);
-            }
-            if (event.body.data.sound) {
-                var snd = new Media(event.body.data.sound);
-                snd.play();
-            }else {
-                var snd = new Media(event.sound);
-                snd.play();
-            }
-            alert('push APN full event ' + JSON.stringify(event));
-        }catch(err) {
-            alert(err);
         }
     }
 };
