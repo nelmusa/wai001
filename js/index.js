@@ -71,6 +71,7 @@ var app = {
         var pushNotification = window.plugins.pushNotification;
         try {
             var title = '';
+            var idioma = localStorage.idioma;
             if (idioma == 'es'){
                 title = 'Notificación';
             } else if (idioma == 'pt'){
