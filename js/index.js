@@ -70,8 +70,15 @@ var app = {
     onNotificationAPN: function(event) {
         var pushNotification = window.plugins.pushNotification;
         try {
-            alert(event.body);
-            event.body = JSON.parse(event.body);
+            var title = '';
+            if (idioma == 'es'){
+                title = 'Notificación';
+            } else if (idioma == 'pt'){
+                title = 'Notificação';
+            } else {
+                title = 'Notification';
+            }
+            navigator.notification.alert(event.body, null, title, 'OK');
             if (event.badge){
                 pushNotification.setApplicationIconBadgeNumber(this.errorHandler, this.errorHandler, event.badge);
             }
