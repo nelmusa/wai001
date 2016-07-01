@@ -44,6 +44,26 @@
             }
         }catch(err) {
         }
+    },
+    onNotificationAPN: function(event) {
+        var pushNotification = window.plugins.pushNotification;
+        try {
+            alert(event.body);
+            event.body = JSON.parse(event.body);
+            if (event.body.data.badge){
+                pushNotification.setApplicationIconBadgeNumber(this.errorHandler, this.errorHandler, event.body.data.badge);
+            }
+            if (event.body.data.sound) {
+                var snd = new Media(event.body.data.sound);
+                snd.play();
+            }else {
+                var snd = new Media(event.sound);
+                snd.play();
+            }
+            alert('push APN full event ' + JSON.stringify(event));
+        }catch(err) {
+            alert(err);
+        }
     }
 };
   notify.initialize();
