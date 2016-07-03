@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.nmsdvlpr" version="1.0.8">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.nmsdvlpr" version="1.0.10">
 	<name>WAI</name>
 	<description>App from WAI Global</description>
 	<author href="www.wai-news.com" email="support@wai-news.com">WAI IT Team</author>
